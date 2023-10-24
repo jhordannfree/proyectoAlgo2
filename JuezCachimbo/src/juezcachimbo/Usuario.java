@@ -8,7 +8,7 @@ package juezcachimbo;
  *
  * @author Pumapillo
  */
-public class Usuario {
+public abstract class Usuario {
     private String name;
     private String username;
     private String email;
@@ -76,4 +76,8 @@ public class Usuario {
     public void setPassword(String password) {
         this.password = password;
     }
+    
+    public abstract void register();
+    public abstract void login();
+    public abstract void logout();
 }
