@@ -2,8 +2,6 @@
 package views;
 
 import com.formdev.flatlaf.FlatLightLaf;
-import java.awt.BorderLayout;
-import javax.swing.JPanel;
 
 
 /**
@@ -20,16 +18,6 @@ public class PanelRegister extends javax.swing.JFrame {
         initComponents();
         setTitle("Juez Cachimbo");
         setResizable(false);
-    }
-    
-    public void showJPanel(JPanel p){
-        p.setSize(1260, 850);
-        p.setLocation(0, 0);
-        
-        PanelDE.removeAll();
-        PanelDE.add(p, BorderLayout.CENTER);
-        PanelDE.revalidate();
-        PanelDE.repaint();
     }
 
     /**
