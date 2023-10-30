@@ -6,6 +6,11 @@ import java.awt.BorderLayout;
 import javax.swing.JPanel;
 
 
+/**
+ *
+ * @author Vilberto Patricio
+ */
+
 public class PanelEstudiante extends javax.swing.JFrame {
 
     public PanelEstudiante() {

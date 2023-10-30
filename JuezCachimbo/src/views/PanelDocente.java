@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package views;
 
 import com.formdev.flatlaf.FlatLightLaf;
@@ -10,7 +7,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Usuario
+ * @author Vilberto Patricio
  */
 public class PanelDocente extends javax.swing.JFrame {
 

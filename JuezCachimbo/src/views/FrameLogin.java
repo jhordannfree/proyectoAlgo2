@@ -3,6 +3,10 @@ package views;
 
 import com.formdev.flatlaf.FlatLightLaf;
 
+/**
+ *
+ * @author Vilberto Patricio
+ */
 
 public class FrameLogin extends javax.swing.JFrame {
 

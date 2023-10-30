@@ -4,6 +4,11 @@ package views;
 import com.formdev.flatlaf.FlatLightLaf;
 
 
+/**
+ *
+ * @author Vilberto Patricio
+ */
+
 public class RegisterDocente2 extends javax.swing.JPanel {
 
     /**

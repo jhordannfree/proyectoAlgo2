@@ -5,6 +5,12 @@ import com.formdev.flatlaf.FlatLightLaf;
 import java.awt.BorderLayout;
 import javax.swing.JPanel;
 
+
+/**
+ *
+ * @author Vilberto Patricio
+ */
+
 public class PanelRegister extends javax.swing.JFrame {
 
     /**

@@ -3,6 +3,12 @@ package views;
 
 import com.formdev.flatlaf.FlatLightLaf;
 
+
+/**
+ *
+ * @author Vilberto Patricio
+ */
+
 public class InicioEstudiante extends javax.swing.JPanel {
 
     public InicioEstudiante() {
