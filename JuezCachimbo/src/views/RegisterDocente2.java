@@ -2,6 +2,8 @@
 package views;
 
 import com.formdev.flatlaf.FlatLightLaf;
+import java.awt.BorderLayout;
+import javax.swing.JPanel;
 
 
 /**
@@ -9,14 +11,25 @@ import com.formdev.flatlaf.FlatLightLaf;
  * @author Vilberto Patricio
  */
 
-public class RegisterDocente2 extends javax.swing.JPanel {
+public class RegisterDocente2 extends javax.swing.JFrame {
 
     /**
-     * Creates new form RegisterDocente1
+     * Creates new form PanelRegister
      */
     public RegisterDocente2() {
         initComponents();
-        FlatLightLaf.setup(); //Modifica el diseño de los componentes de las interfaces graficas
+        setTitle("Juez Cachimbo");
+        setResizable(false);
+    }
+    
+    public void showJPanel(JPanel p){
+        p.setSize(1260, 850);
+        p.setLocation(0, 0);
+        
+        PanelDE.removeAll();
+        PanelDE.add(p, BorderLayout.CENTER);
+        PanelDE.revalidate();
+        PanelDE.repaint();
     }
 
     /**
@@ -28,70 +41,153 @@ public class RegisterDocente2 extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        bgRegisterDC1 = new javax.swing.JPanel();
+        PanelDE = new javax.swing.JPanel();
+        btnRegistrarse = new javax.swing.JButton();
+        jTFClave = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jTFUsername = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         title = new javax.swing.JLabel();
         icon = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        Panelimg = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jTFUsername = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jTFClave = new javax.swing.JTextField();
-        btnRegistrarse = new javax.swing.JButton();
 
-        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(1650, 953));
 
-        bgRegisterDC1.setBackground(new java.awt.Color(255, 255, 255));
-        bgRegisterDC1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        title.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Juez_cachimbp.png"))); // NOI18N
-        bgRegisterDC1.add(title, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 150, 210, 100));
-
-        icon.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        icon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/logo.png"))); // NOI18N
-        bgRegisterDC1.add(icon, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, 100, 100));
-
-        jLabel6.setFont(new java.awt.Font("Poppins SemiBold", 1, 22)); // NOI18N
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("Docente");
-        bgRegisterDC1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 280, 130, -1));
-
-        jLabel1.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(85, 85, 85));
-        jLabel1.setText("Nombre de usuario");
-        bgRegisterDC1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 360, -1, -1));
-
-        jTFUsername.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jTFUsername.setForeground(new java.awt.Color(85, 85, 85));
-        bgRegisterDC1.add(jTFUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 400, 410, 40));
-
-        jLabel2.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(85, 85, 85));
-        jLabel2.setText("Contraseña");
-        bgRegisterDC1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 470, -1, -1));
-
-        jTFClave.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jTFClave.setForeground(new java.awt.Color(85, 85, 85));
-        bgRegisterDC1.add(jTFClave, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 510, 410, 40));
+        PanelDE.setBackground(new java.awt.Color(255, 255, 255));
+        PanelDE.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnRegistrarse.setBackground(new java.awt.Color(253, 116, 1));
         btnRegistrarse.setFont(new java.awt.Font("Poppins SemiBold", 0, 20)); // NOI18N
         btnRegistrarse.setForeground(new java.awt.Color(255, 255, 255));
         btnRegistrarse.setText("Registrarse");
         btnRegistrarse.setFocusable(false);
-        bgRegisterDC1.add(btnRegistrarse, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 680, 410, 50));
+        PanelDE.add(btnRegistrarse, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 680, 410, 50));
 
-        add(bgRegisterDC1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 658, 953));
+        jTFClave.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        jTFClave.setForeground(new java.awt.Color(85, 85, 85));
+        PanelDE.add(jTFClave, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 510, 410, 40));
+
+        jLabel2.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(85, 85, 85));
+        jLabel2.setText("Contraseña");
+        PanelDE.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 470, -1, -1));
+
+        jTFUsername.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        jTFUsername.setForeground(new java.awt.Color(85, 85, 85));
+        PanelDE.add(jTFUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 400, 410, 40));
+
+        jLabel9.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(85, 85, 85));
+        jLabel9.setText("Nombre de usuario");
+        PanelDE.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 360, -1, -1));
+
+        jLabel6.setFont(new java.awt.Font("Poppins SemiBold", 1, 22)); // NOI18N
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setText("Docente");
+        PanelDE.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 280, 130, -1));
+
+        title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        title.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Juez_cachimbp.png"))); // NOI18N
+        PanelDE.add(title, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 150, 210, 100));
+
+        icon.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        icon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/logo.png"))); // NOI18N
+        PanelDE.add(icon, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, 100, 100));
+
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Login_Ilustrator_1.png"))); // NOI18N
+
+        javax.swing.GroupLayout PanelimgLayout = new javax.swing.GroupLayout(Panelimg);
+        Panelimg.setLayout(PanelimgLayout);
+        PanelimgLayout.setHorizontalGroup(
+            PanelimgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelimgLayout.createSequentialGroup()
+                .addGap(74, 74, 74)
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 850, Short.MAX_VALUE)
+                .addGap(66, 66, 66))
+        );
+        PanelimgLayout.setVerticalGroup(
+            PanelimgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelimgLayout.createSequentialGroup()
+                .addGap(94, 94, 94)
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(79, 79, 79))
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(PanelDE, javax.swing.GroupLayout.PREFERRED_SIZE, 658, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Panelimg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(PanelDE, javax.swing.GroupLayout.DEFAULT_SIZE, 953, Short.MAX_VALUE)
+            .addComponent(Panelimg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(RegisterDocente2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(RegisterDocente2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(RegisterDocente2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(RegisterDocente2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        
+        FlatLightLaf.setup();
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new RegisterDocente2().setVisible(true);
+            }
+        });
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel bgRegisterDC1;
+    private javax.swing.JPanel PanelDE;
+    private javax.swing.JPanel Panelimg;
     private javax.swing.JButton btnRegistrarse;
     private javax.swing.JLabel icon;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JTextField jTFClave;
     private javax.swing.JTextField jTFUsername;
     private javax.swing.JLabel title;
