@@ -27,222 +27,64 @@ public class InicioDocente extends javax.swing.JPanel {
 
         bgInicio = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        contenedor = new javax.swing.JPanel();
-        contenedor1 = new javax.swing.JPanel();
-        jLabelTitulo1 = new javax.swing.JLabel();
-        jLabelTexto1 = new javax.swing.JLabel();
-        contenedor2 = new javax.swing.JPanel();
-        jLabelTitulo2 = new javax.swing.JLabel();
-        jLabelTexto2 = new javax.swing.JLabel();
-        jSeparator1 = new javax.swing.JSeparator();
-        jSeparator2 = new javax.swing.JSeparator();
-        contenedor3 = new javax.swing.JPanel();
-        jLabelTitulo3 = new javax.swing.JLabel();
-        jLabelTexto3 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTableRanking = new javax.swing.JTable();
+
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         bgInicio.setBackground(new java.awt.Color(241, 243, 246));
         bgInicio.setPreferredSize(new java.awt.Dimension(1260, 850));
+        bgInicio.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Poppins SemiBold", 0, 20)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(253, 116, 1));
-        jLabel1.setText("Textos recomendados");
+        jLabel1.setText("Ranking de estudiantes");
+        bgInicio.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, -1, -1));
 
-        contenedor.setBackground(new java.awt.Color(241, 243, 246));
-        contenedor.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(243, 213, 190), new java.awt.Color(243, 213, 190)));
+        jScrollPane1.setBackground(new java.awt.Color(241, 243, 246));
+        jScrollPane1.setFocusable(false);
+        jScrollPane1.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
 
-        contenedor1.setBackground(new java.awt.Color(241, 243, 246));
+        jTableRanking.setBackground(new java.awt.Color(241, 243, 246));
+        jTableRanking.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
+        jTableRanking.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
 
-        jLabelTitulo1.setFont(new java.awt.Font("Poppins SemiBold", 0, 18)); // NOI18N
-        jLabelTitulo1.setText("{Titulo}");
+            },
+            new String [] {
+                "Posición", "Nombre del estudiante", "# Preguntas correctas", "# Preguntas incorrectas"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Integer.class, java.lang.String.class, java.lang.Integer.class, java.lang.Integer.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false
+            };
 
-        jLabelTexto1.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
-        jLabelTexto1.setText("{Texto}...");
-        jLabelTexto1.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
 
-        javax.swing.GroupLayout contenedor1Layout = new javax.swing.GroupLayout(contenedor1);
-        contenedor1.setLayout(contenedor1Layout);
-        contenedor1Layout.setHorizontalGroup(
-            contenedor1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(contenedor1Layout.createSequentialGroup()
-                .addGroup(contenedor1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(contenedor1Layout.createSequentialGroup()
-                        .addGap(48, 48, 48)
-                        .addComponent(jLabelTexto1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(contenedor1Layout.createSequentialGroup()
-                        .addGap(25, 25, 25)
-                        .addComponent(jLabelTitulo1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(80, 80, 80)))
-                .addGap(139, 139, 139))
-        );
-        contenedor1Layout.setVerticalGroup(
-            contenedor1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(contenedor1Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(jLabelTitulo1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabelTexto1, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
-                .addGap(19, 19, 19))
-        );
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jTableRanking.setShowGrid(false);
+        jTableRanking.setShowHorizontalLines(true);
+        jTableRanking.setShowVerticalLines(true);
+        jScrollPane1.setViewportView(jTableRanking);
 
-        contenedor2.setBackground(new java.awt.Color(241, 243, 246));
+        bgInicio.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, 1140, 660));
 
-        jLabelTitulo2.setFont(new java.awt.Font("Poppins SemiBold", 0, 18)); // NOI18N
-        jLabelTitulo2.setText("{Titulo}");
-
-        jLabelTexto2.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
-        jLabelTexto2.setText("{Texto}...");
-        jLabelTexto2.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-
-        javax.swing.GroupLayout contenedor2Layout = new javax.swing.GroupLayout(contenedor2);
-        contenedor2.setLayout(contenedor2Layout);
-        contenedor2Layout.setHorizontalGroup(
-            contenedor2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(contenedor2Layout.createSequentialGroup()
-                .addGroup(contenedor2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(contenedor2Layout.createSequentialGroup()
-                        .addGap(48, 48, 48)
-                        .addComponent(jLabelTexto2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(contenedor2Layout.createSequentialGroup()
-                        .addGap(25, 25, 25)
-                        .addComponent(jLabelTitulo2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(63, 63, 63)))
-                .addGap(149, 149, 149))
-        );
-        contenedor2Layout.setVerticalGroup(
-            contenedor2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(contenedor2Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(jLabelTitulo2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabelTexto2, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
-                .addGap(19, 19, 19))
-        );
-
-        contenedor3.setBackground(new java.awt.Color(241, 243, 246));
-
-        jLabelTitulo3.setFont(new java.awt.Font("Poppins SemiBold", 0, 18)); // NOI18N
-        jLabelTitulo3.setText("{Titulo}");
-
-        jLabelTexto3.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
-        jLabelTexto3.setText("{Texto}...");
-        jLabelTexto3.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-
-        javax.swing.GroupLayout contenedor3Layout = new javax.swing.GroupLayout(contenedor3);
-        contenedor3.setLayout(contenedor3Layout);
-        contenedor3Layout.setHorizontalGroup(
-            contenedor3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(contenedor3Layout.createSequentialGroup()
-                .addGroup(contenedor3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(contenedor3Layout.createSequentialGroup()
-                        .addGap(48, 48, 48)
-                        .addComponent(jLabelTexto3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(contenedor3Layout.createSequentialGroup()
-                        .addGap(25, 25, 25)
-                        .addComponent(jLabelTitulo3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(59, 59, 59)))
-                .addGap(139, 139, 139))
-        );
-        contenedor3Layout.setVerticalGroup(
-            contenedor3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(contenedor3Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(jLabelTitulo3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabelTexto3, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
-                .addGap(19, 19, 19))
-        );
-
-        javax.swing.GroupLayout contenedorLayout = new javax.swing.GroupLayout(contenedor);
-        contenedor.setLayout(contenedorLayout);
-        contenedorLayout.setHorizontalGroup(
-            contenedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(contenedorLayout.createSequentialGroup()
-                .addGap(48, 48, 48)
-                .addComponent(contenedor1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(68, 68, 68))
-            .addGroup(contenedorLayout.createSequentialGroup()
-                .addGap(48, 48, 48)
-                .addComponent(jSeparator1)
-                .addGap(58, 58, 58))
-            .addGroup(contenedorLayout.createSequentialGroup()
-                .addGap(48, 48, 48)
-                .addComponent(contenedor2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(58, 58, 58))
-            .addGroup(contenedorLayout.createSequentialGroup()
-                .addGap(58, 58, 58)
-                .addComponent(jSeparator2)
-                .addGap(58, 58, 58))
-            .addGroup(contenedorLayout.createSequentialGroup()
-                .addGap(58, 58, 58)
-                .addComponent(contenedor3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(58, 58, 58))
-        );
-        contenedorLayout.setVerticalGroup(
-            contenedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(contenedorLayout.createSequentialGroup()
-                .addGap(28, 28, 28)
-                .addComponent(contenedor1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20)
-                .addComponent(jSeparator1, javax.swing.GroupLayout.DEFAULT_SIZE, 10, Short.MAX_VALUE)
-                .addGap(20, 20, 20)
-                .addComponent(contenedor2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
-                .addComponent(jSeparator2, javax.swing.GroupLayout.DEFAULT_SIZE, 20, Short.MAX_VALUE)
-                .addGap(0, 0, 0)
-                .addComponent(contenedor3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(88, 88, 88))
-        );
-
-        javax.swing.GroupLayout bgInicioLayout = new javax.swing.GroupLayout(bgInicio);
-        bgInicio.setLayout(bgInicioLayout);
-        bgInicioLayout.setHorizontalGroup(
-            bgInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bgInicioLayout.createSequentialGroup()
-                .addGap(60, 60, 60)
-                .addGroup(bgInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(bgInicioLayout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(891, 891, 891))
-                    .addComponent(contenedor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(80, 80, 80))
-        );
-        bgInicioLayout.setVerticalGroup(
-            bgInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bgInicioLayout.createSequentialGroup()
-                .addGap(60, 60, 60)
-                .addComponent(jLabel1)
-                .addGap(20, 20, 20)
-                .addComponent(contenedor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(130, 130, 130))
-        );
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bgInicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bgInicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        add(bgInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1274, -1));
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel bgInicio;
-    private javax.swing.JPanel contenedor;
-    private javax.swing.JPanel contenedor1;
-    private javax.swing.JPanel contenedor2;
-    private javax.swing.JPanel contenedor3;
     private javax.swing.JLabel jLabel1;
-    public javax.swing.JLabel jLabelTexto1;
-    public javax.swing.JLabel jLabelTexto2;
-    public javax.swing.JLabel jLabelTexto3;
-    public javax.swing.JLabel jLabelTitulo1;
-    public javax.swing.JLabel jLabelTitulo2;
-    public javax.swing.JLabel jLabelTitulo3;
-    private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTableRanking;
     // End of variables declaration//GEN-END:variables
 }
