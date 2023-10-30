@@ -30,10 +30,10 @@ public class PanelEstudiante extends javax.swing.JFrame {
         p.setSize(1260, 850); //El nuevo panel tendra la misma dimension del contenedor principal
         p.setLocation(0, 0); //El nuevo panel se colocara en la posicion (0, 0)
         
-        contenedorPrincipal.removeAll();
-        contenedorPrincipal.add(p, BorderLayout.CENTER);
-        contenedorPrincipal.revalidate();
-        contenedorPrincipal.repaint();
+        contenedorPrincipalE.removeAll();
+        contenedorPrincipalE.add(p, BorderLayout.CENTER);
+        contenedorPrincipalE.revalidate();
+        contenedorPrincipalE.repaint();
     }
 
     /**
@@ -62,7 +62,7 @@ public class PanelEstudiante extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jTextField1 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
-        contenedorPrincipal = new javax.swing.JPanel();
+        contenedorPrincipalE = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1650, 953));
@@ -156,16 +156,16 @@ public class PanelEstudiante extends javax.swing.JFrame {
                 .addContainerGap(38, Short.MAX_VALUE))
         );
 
-        contenedorPrincipal.setBackground(new java.awt.Color(241, 243, 246));
+        contenedorPrincipalE.setBackground(new java.awt.Color(241, 243, 246));
 
-        javax.swing.GroupLayout contenedorPrincipalLayout = new javax.swing.GroupLayout(contenedorPrincipal);
-        contenedorPrincipal.setLayout(contenedorPrincipalLayout);
-        contenedorPrincipalLayout.setHorizontalGroup(
-            contenedorPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout contenedorPrincipalELayout = new javax.swing.GroupLayout(contenedorPrincipalE);
+        contenedorPrincipalE.setLayout(contenedorPrincipalELayout);
+        contenedorPrincipalELayout.setHorizontalGroup(
+            contenedorPrincipalELayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
-        contenedorPrincipalLayout.setVerticalGroup(
-            contenedorPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        contenedorPrincipalELayout.setVerticalGroup(
+            contenedorPrincipalELayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
@@ -177,14 +177,14 @@ public class PanelEstudiante extends javax.swing.JFrame {
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(contenedorPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(contenedorPrincipalE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(contenedorPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(contenedorPrincipalE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 953, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
@@ -233,7 +233,7 @@ public class PanelEstudiante extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JPanel contenedorPrincipal;
+    public javax.swing.JPanel contenedorPrincipalE;
     private javax.swing.JLabel icon;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel6;
