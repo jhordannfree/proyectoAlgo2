@@ -3,9 +3,9 @@ package views;
 
 import com.formdev.flatlaf.FlatLightLaf;
 
-public class InicioEstudiante extends javax.swing.JPanel {
+public class PracticarEstudiante extends javax.swing.JPanel {
 
-    public InicioEstudiante() {
+    public PracticarEstudiante() {
         initComponents();
         FlatLightLaf.setup();
     }
@@ -30,7 +30,7 @@ public class InicioEstudiante extends javax.swing.JPanel {
         bgPerfil.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel26.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
-        jLabel26.setText("Juez Cachimbo / Inicio");
+        jLabel26.setText("Juez Cachimbo / Practicar");
         bgPerfil.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
 
         jTable1.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
@@ -39,11 +39,11 @@ public class InicioEstudiante extends javax.swing.JPanel {
                 {null, null, null}
             },
             new String [] {
-                "Titulo", "Descripción", "Números de preguntas"
+                "Titulo", "Descripción", "Enlace"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.Integer.class
+                java.lang.String.class, java.lang.String.class, java.lang.Object.class
             };
             boolean[] canEdit = new boolean [] {
                 false, false, false

@@ -3,17 +3,11 @@ package views;
 
 import com.formdev.flatlaf.FlatLightLaf;
 
-
-/**
- *
- * @author Vilberto Patricio
- */
-
 public class PerfilEstudiante extends javax.swing.JPanel {
 
     public PerfilEstudiante() {
         initComponents();
-        FlatLightLaf.setup(); //Modifica el diseño de los componentes de las interfaces graficas
+        FlatLightLaf.setup();
     }
 
     /**
@@ -27,16 +21,25 @@ public class PerfilEstudiante extends javax.swing.JPanel {
 
         bgPerfil = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jPanelEstadistica1 = new javax.swing.JPanel();
-        jPanelEstadistica2 = new javax.swing.JPanel();
-        jPanelEstadistica4 = new javax.swing.JPanel();
-        jPanelEstadistica3 = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jPanel5 = new javax.swing.JPanel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jPanel6 = new javax.swing.JPanel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jPanel7 = new javax.swing.JPanel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        jPanelFotografia = new javax.swing.JPanel();
-        jLabeñDatosPersonales = new javax.swing.JLabel();
-        jLabelUsername = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        btnEditarDatos = new javax.swing.JButton();
+        btnEditarDatosPersonales = new javax.swing.JButton();
+        jLabel26 = new javax.swing.JLabel();
 
         bgPerfil.setBackground(new java.awt.Color(241, 243, 246));
         bgPerfil.setPreferredSize(new java.awt.Dimension(1260, 850));
@@ -45,110 +48,110 @@ public class PerfilEstudiante extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Poppins SemiBold", 0, 20)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(253, 116, 1));
         jLabel1.setText("Estadísticas generales");
-        bgPerfil.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 260, -1, -1));
+        bgPerfil.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 270, -1, -1));
 
-        jPanelEstadistica1.setBackground(new java.awt.Color(241, 243, 246));
-        jPanelEstadistica1.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(243, 213, 190), new java.awt.Color(243, 213, 190)));
+        jPanel1.setBackground(new java.awt.Color(241, 243, 246));
+        jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(243, 213, 190), new java.awt.Color(243, 213, 190)));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout jPanelEstadistica1Layout = new javax.swing.GroupLayout(jPanelEstadistica1);
-        jPanelEstadistica1.setLayout(jPanelEstadistica1Layout);
-        jPanelEstadistica1Layout.setHorizontalGroup(
-            jPanelEstadistica1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 352, Short.MAX_VALUE)
-        );
-        jPanelEstadistica1Layout.setVerticalGroup(
-            jPanelEstadistica1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 171, Short.MAX_VALUE)
-        );
+        jLabel6.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
+        jLabel6.setText("Cantidad de preguntas correctas");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, 48));
 
-        bgPerfil.add(jPanelEstadistica1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 310, 356, 175));
+        jLabel12.setFont(new java.awt.Font("Poppins Medium", 1, 18)); // NOI18N
+        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel12.setText("{Cantidad}");
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, -1, 48));
 
-        jPanelEstadistica2.setBackground(new java.awt.Color(241, 243, 246));
-        jPanelEstadistica2.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(243, 213, 190), new java.awt.Color(243, 213, 190)));
+        bgPerfil.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 320, 360, 175));
 
-        javax.swing.GroupLayout jPanelEstadistica2Layout = new javax.swing.GroupLayout(jPanelEstadistica2);
-        jPanelEstadistica2.setLayout(jPanelEstadistica2Layout);
-        jPanelEstadistica2Layout.setHorizontalGroup(
-            jPanelEstadistica2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 356, Short.MAX_VALUE)
-        );
-        jPanelEstadistica2Layout.setVerticalGroup(
-            jPanelEstadistica2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 175, Short.MAX_VALUE)
-        );
+        jPanel5.setBackground(new java.awt.Color(241, 243, 246));
+        jPanel5.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(243, 213, 190), new java.awt.Color(243, 213, 190)));
+        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        bgPerfil.add(jPanelEstadistica2, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 310, -1, -1));
+        jLabel8.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
+        jLabel8.setText("<html>Porcentaje de textos en los que acerto todas las preguntas</html>");
+        jPanel5.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 320, 48));
 
-        jPanelEstadistica4.setBackground(new java.awt.Color(241, 243, 246));
-        jPanelEstadistica4.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(243, 213, 190), new java.awt.Color(243, 213, 190)));
+        jLabel14.setFont(new java.awt.Font("Poppins Medium", 1, 18)); // NOI18N
+        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel14.setText("{Porcentaje}");
+        jPanel5.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 100, -1, 48));
 
-        javax.swing.GroupLayout jPanelEstadistica4Layout = new javax.swing.GroupLayout(jPanelEstadistica4);
-        jPanelEstadistica4.setLayout(jPanelEstadistica4Layout);
-        jPanelEstadistica4Layout.setHorizontalGroup(
-            jPanelEstadistica4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 356, Short.MAX_VALUE)
-        );
-        jPanelEstadistica4Layout.setVerticalGroup(
-            jPanelEstadistica4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 175, Short.MAX_VALUE)
-        );
+        bgPerfil.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 320, 360, 175));
 
-        bgPerfil.add(jPanelEstadistica4, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 520, -1, -1));
+        jPanel6.setBackground(new java.awt.Color(241, 243, 246));
+        jPanel6.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(243, 213, 190), new java.awt.Color(243, 213, 190)));
+        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanelEstadistica3.setBackground(new java.awt.Color(241, 243, 246));
-        jPanelEstadistica3.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(243, 213, 190), new java.awt.Color(243, 213, 190)));
+        jLabel10.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
+        jLabel10.setText("<html>Porcentaje de preguntas correctas en total</html>");
+        jPanel6.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 320, 48));
 
-        javax.swing.GroupLayout jPanelEstadistica3Layout = new javax.swing.GroupLayout(jPanelEstadistica3);
-        jPanelEstadistica3.setLayout(jPanelEstadistica3Layout);
-        jPanelEstadistica3Layout.setHorizontalGroup(
-            jPanelEstadistica3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 352, Short.MAX_VALUE)
-        );
-        jPanelEstadistica3Layout.setVerticalGroup(
-            jPanelEstadistica3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 171, Short.MAX_VALUE)
-        );
+        jLabel13.setFont(new java.awt.Font("Poppins Medium", 1, 18)); // NOI18N
+        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel13.setText("{Porcentaje}");
+        jPanel6.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, -1, 48));
 
-        bgPerfil.add(jPanelEstadistica3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 520, -1, -1));
+        bgPerfil.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 530, 360, 175));
+
+        jPanel7.setBackground(new java.awt.Color(241, 243, 246));
+        jPanel7.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(243, 213, 190), new java.awt.Color(243, 213, 190)));
+        jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel7.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
+        jLabel7.setText("Cantidad de texto leídos");
+        jPanel7.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, 48));
+
+        jLabel11.setFont(new java.awt.Font("Poppins Medium", 1, 18)); // NOI18N
+        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel11.setText("{Cantidad}");
+        jPanel7.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 80, -1, 48));
+
+        bgPerfil.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 530, 360, 175));
 
         jSeparator1.setForeground(new java.awt.Color(243, 213, 190));
-        bgPerfil.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 230, 790, 10));
+        bgPerfil.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 260, 790, 10));
 
-        jPanelFotografia.setBackground(new java.awt.Color(241, 243, 246));
-        jPanelFotografia.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(243, 213, 190), new java.awt.Color(243, 213, 190)));
+        jPanel2.setBackground(new java.awt.Color(241, 243, 246));
+        jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(243, 213, 190), new java.awt.Color(243, 213, 190)));
 
-        javax.swing.GroupLayout jPanelFotografiaLayout = new javax.swing.GroupLayout(jPanelFotografia);
-        jPanelFotografia.setLayout(jPanelFotografiaLayout);
-        jPanelFotografiaLayout.setHorizontalGroup(
-            jPanelFotografiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 96, Short.MAX_VALUE)
         );
-        jPanelFotografiaLayout.setVerticalGroup(
-            jPanelFotografiaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 96, Short.MAX_VALUE)
         );
 
-        bgPerfil.add(jPanelFotografia, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 60, 100, 100));
+        bgPerfil.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 100, 100, 100));
 
-        jLabeñDatosPersonales.setFont(new java.awt.Font("Poppins SemiBold", 0, 20)); // NOI18N
-        jLabeñDatosPersonales.setText("{Nombres}, {Apellidos}");
-        bgPerfil.add(jLabeñDatosPersonales, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 70, 450, -1));
+        jLabel2.setFont(new java.awt.Font("Poppins SemiBold", 0, 20)); // NOI18N
+        jLabel2.setText("{Nombres}, {Apellidos}");
+        bgPerfil.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, 450, -1));
 
-        jLabelUsername.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jLabelUsername.setText("{Username}");
-        bgPerfil.add(jLabelUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, 340, -1));
+        jLabel3.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        jLabel3.setText("{Username}");
+        bgPerfil.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 160, 340, -1));
 
         jLabel4.setFont(new java.awt.Font("Poppins Medium", 0, 14)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("{Ranking}");
-        bgPerfil.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 170, 100, -1));
+        bgPerfil.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 210, 100, -1));
 
-        btnEditarDatos.setBackground(new java.awt.Color(253, 116, 1));
-        btnEditarDatos.setFont(new java.awt.Font("Poppins SemiBold", 0, 20)); // NOI18N
-        btnEditarDatos.setForeground(new java.awt.Color(255, 255, 255));
-        btnEditarDatos.setText("Editar datos personales");
-        btnEditarDatos.setFocusable(false);
-        bgPerfil.add(btnEditarDatos, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 730, 350, 50));
+        btnEditarDatosPersonales.setBackground(new java.awt.Color(253, 116, 1));
+        btnEditarDatosPersonales.setFont(new java.awt.Font("Poppins SemiBold", 0, 20)); // NOI18N
+        btnEditarDatosPersonales.setForeground(new java.awt.Color(255, 255, 255));
+        btnEditarDatosPersonales.setText("Editar datos personales");
+        btnEditarDatosPersonales.setFocusable(false);
+        bgPerfil.add(btnEditarDatosPersonales, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 740, 350, 50));
+
+        jLabel26.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
+        jLabel26.setText("Juez Cachimbo / Perfil");
+        bgPerfil.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -165,16 +168,25 @@ public class PerfilEstudiante extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel bgPerfil;
-    private javax.swing.JButton btnEditarDatos;
+    private javax.swing.JButton btnEditarDatosPersonales;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabelUsername;
-    private javax.swing.JLabel jLabeñDatosPersonales;
-    private javax.swing.JPanel jPanelEstadistica1;
-    private javax.swing.JPanel jPanelEstadistica2;
-    private javax.swing.JPanel jPanelEstadistica3;
-    private javax.swing.JPanel jPanelEstadistica4;
-    private javax.swing.JPanel jPanelFotografia;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
     private javax.swing.JSeparator jSeparator1;
     // End of variables declaration//GEN-END:variables
 }
