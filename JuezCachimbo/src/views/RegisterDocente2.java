@@ -30,16 +30,16 @@ public class RegisterDocente2 extends javax.swing.JFrame {
     private void initComponents() {
 
         PanelDE = new javax.swing.JPanel();
-        btnRegistrarse = new javax.swing.JButton();
-        jTFClave = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jTFUsername = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        btnRegistrarseD = new javax.swing.JButton();
+        txtClaveRegisterD = new javax.swing.JTextField();
+        jLabelPasswordRD = new javax.swing.JLabel();
+        txtUsernameRegisterD = new javax.swing.JTextField();
+        jLabelUsernameRegisterD = new javax.swing.JLabel();
+        jLabelDocente = new javax.swing.JLabel();
         title = new javax.swing.JLabel();
         icon = new javax.swing.JLabel();
         Panelimg = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        jLabelImg = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1650, 953));
@@ -47,35 +47,35 @@ public class RegisterDocente2 extends javax.swing.JFrame {
         PanelDE.setBackground(new java.awt.Color(255, 255, 255));
         PanelDE.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnRegistrarse.setBackground(new java.awt.Color(253, 116, 1));
-        btnRegistrarse.setFont(new java.awt.Font("Poppins SemiBold", 0, 20)); // NOI18N
-        btnRegistrarse.setForeground(new java.awt.Color(255, 255, 255));
-        btnRegistrarse.setText("Registrarse");
-        btnRegistrarse.setFocusable(false);
-        PanelDE.add(btnRegistrarse, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 680, 410, 50));
+        btnRegistrarseD.setBackground(new java.awt.Color(253, 116, 1));
+        btnRegistrarseD.setFont(new java.awt.Font("Poppins SemiBold", 0, 20)); // NOI18N
+        btnRegistrarseD.setForeground(new java.awt.Color(255, 255, 255));
+        btnRegistrarseD.setText("Registrarse");
+        btnRegistrarseD.setFocusable(false);
+        PanelDE.add(btnRegistrarseD, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 680, 410, 50));
 
-        jTFClave.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jTFClave.setForeground(new java.awt.Color(85, 85, 85));
-        PanelDE.add(jTFClave, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 510, 410, 40));
+        txtClaveRegisterD.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        txtClaveRegisterD.setForeground(new java.awt.Color(85, 85, 85));
+        PanelDE.add(txtClaveRegisterD, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 510, 410, 40));
 
-        jLabel2.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(85, 85, 85));
-        jLabel2.setText("Contraseña");
-        PanelDE.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 470, -1, -1));
+        jLabelPasswordRD.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
+        jLabelPasswordRD.setForeground(new java.awt.Color(85, 85, 85));
+        jLabelPasswordRD.setText("Contraseña");
+        PanelDE.add(jLabelPasswordRD, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 470, -1, -1));
 
-        jTFUsername.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jTFUsername.setForeground(new java.awt.Color(85, 85, 85));
-        PanelDE.add(jTFUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 400, 410, 40));
+        txtUsernameRegisterD.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        txtUsernameRegisterD.setForeground(new java.awt.Color(85, 85, 85));
+        PanelDE.add(txtUsernameRegisterD, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 400, 410, 40));
 
-        jLabel9.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(85, 85, 85));
-        jLabel9.setText("Nombre de usuario");
-        PanelDE.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 360, -1, -1));
+        jLabelUsernameRegisterD.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
+        jLabelUsernameRegisterD.setForeground(new java.awt.Color(85, 85, 85));
+        jLabelUsernameRegisterD.setText("Nombre de usuario");
+        PanelDE.add(jLabelUsernameRegisterD, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 360, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("Poppins SemiBold", 1, 22)); // NOI18N
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("Docente");
-        PanelDE.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 280, 130, -1));
+        jLabelDocente.setFont(new java.awt.Font("Poppins SemiBold", 1, 22)); // NOI18N
+        jLabelDocente.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelDocente.setText("Docente");
+        PanelDE.add(jLabelDocente, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 280, 130, -1));
 
         title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         title.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Juez_cachimbp.png"))); // NOI18N
@@ -87,9 +87,9 @@ public class RegisterDocente2 extends javax.swing.JFrame {
 
         Panelimg.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/password.png"))); // NOI18N
-        Panelimg.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(74, 94, 850, 780));
+        jLabelImg.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/password.png"))); // NOI18N
+        Panelimg.add(jLabelImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(74, 94, 850, 780));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -156,14 +156,14 @@ public class RegisterDocente2 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel PanelDE;
     private javax.swing.JPanel Panelimg;
-    private javax.swing.JButton btnRegistrarse;
+    private javax.swing.JButton btnRegistrarseD;
     private javax.swing.JLabel icon;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JTextField jTFClave;
-    private javax.swing.JTextField jTFUsername;
+    private javax.swing.JLabel jLabelDocente;
+    private javax.swing.JLabel jLabelImg;
+    private javax.swing.JLabel jLabelPasswordRD;
+    private javax.swing.JLabel jLabelUsernameRegisterD;
     private javax.swing.JLabel title;
+    private javax.swing.JTextField txtClaveRegisterD;
+    private javax.swing.JTextField txtUsernameRegisterD;
     // End of variables declaration//GEN-END:variables
 }

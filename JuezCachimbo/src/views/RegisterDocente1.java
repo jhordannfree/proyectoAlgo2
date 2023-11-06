@@ -32,23 +32,23 @@ public class RegisterDocente1 extends javax.swing.JFrame {
         PanelDE = new javax.swing.JPanel();
         icon = new javax.swing.JLabel();
         title = new javax.swing.JLabel();
-        registrarse = new javax.swing.JLabel();
-        jTFNombre = new javax.swing.JTextField();
-        jTFApellidos = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jTFDias = new javax.swing.JTextField();
-        jTFMeses = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jTFAnio = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
-        jTFCarreraProfesional = new javax.swing.JTextField();
-        btnSiguiente = new javax.swing.JButton();
+        labelDocente = new javax.swing.JLabel();
+        txtNombreRegisterDocente = new javax.swing.JTextField();
+        txtApellidosRegisterD = new javax.swing.JTextField();
+        jLabelApellidosRD = new javax.swing.JLabel();
+        jLabelNombreRD = new javax.swing.JLabel();
+        jLabelFechaRD = new javax.swing.JLabel();
+        jLabelDiaRD = new javax.swing.JLabel();
+        txtDiaRegisterD = new javax.swing.JTextField();
+        txtNumeroMesRegisterD = new javax.swing.JTextField();
+        jLabelMesRD = new javax.swing.JLabel();
+        jLabelAnioRD = new javax.swing.JLabel();
+        txtAnioRegisterD = new javax.swing.JTextField();
+        jLabelCarreraRD = new javax.swing.JLabel();
+        txtCarreraProfesionalRegisterD = new javax.swing.JTextField();
+        btnSiguienteRegisterD = new javax.swing.JButton();
         Panelimg = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        jLabelImg = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1650, 953));
@@ -64,84 +64,84 @@ public class RegisterDocente1 extends javax.swing.JFrame {
         title.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Juez_cachimbp.png"))); // NOI18N
         PanelDE.add(title, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 80, 210, 100));
 
-        registrarse.setFont(new java.awt.Font("Poppins SemiBold", 1, 20)); // NOI18N
-        registrarse.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        registrarse.setText("Docente");
-        PanelDE.add(registrarse, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 200, 210, -1));
+        labelDocente.setFont(new java.awt.Font("Poppins SemiBold", 1, 20)); // NOI18N
+        labelDocente.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelDocente.setText("Docente");
+        PanelDE.add(labelDocente, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 200, 210, -1));
 
-        jTFNombre.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jTFNombre.setForeground(new java.awt.Color(85, 85, 85));
-        PanelDE.add(jTFNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 310, 410, 40));
+        txtNombreRegisterDocente.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        txtNombreRegisterDocente.setForeground(new java.awt.Color(85, 85, 85));
+        PanelDE.add(txtNombreRegisterDocente, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 310, 410, 40));
 
-        jTFApellidos.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jTFApellidos.setForeground(new java.awt.Color(85, 85, 85));
-        PanelDE.add(jTFApellidos, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 420, 410, 40));
+        txtApellidosRegisterD.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        txtApellidosRegisterD.setForeground(new java.awt.Color(85, 85, 85));
+        PanelDE.add(txtApellidosRegisterD, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 420, 410, 40));
 
-        jLabel2.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(85, 85, 85));
-        jLabel2.setText("Apellidos");
-        PanelDE.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 380, -1, -1));
+        jLabelApellidosRD.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
+        jLabelApellidosRD.setForeground(new java.awt.Color(85, 85, 85));
+        jLabelApellidosRD.setText("Apellidos");
+        PanelDE.add(jLabelApellidosRD, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 380, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(85, 85, 85));
-        jLabel3.setText("Nombre");
-        PanelDE.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 270, -1, -1));
+        jLabelNombreRD.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
+        jLabelNombreRD.setForeground(new java.awt.Color(85, 85, 85));
+        jLabelNombreRD.setText("Nombre");
+        PanelDE.add(jLabelNombreRD, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 270, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(85, 85, 85));
-        jLabel4.setText("Fecha de nacimiento");
-        PanelDE.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 490, -1, -1));
+        jLabelFechaRD.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
+        jLabelFechaRD.setForeground(new java.awt.Color(85, 85, 85));
+        jLabelFechaRD.setText("Fecha de nacimiento");
+        PanelDE.add(jLabelFechaRD, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 490, -1, -1));
 
-        jLabel5.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(85, 85, 85));
-        jLabel5.setText("Dia");
-        PanelDE.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 530, -1, -1));
+        jLabelDiaRD.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
+        jLabelDiaRD.setForeground(new java.awt.Color(85, 85, 85));
+        jLabelDiaRD.setText("Dia");
+        PanelDE.add(jLabelDiaRD, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 530, -1, -1));
 
-        jTFDias.setFont(new java.awt.Font("Poppins", 0, 15)); // NOI18N
-        jTFDias.addActionListener(new java.awt.event.ActionListener() {
+        txtDiaRegisterD.setFont(new java.awt.Font("Poppins", 0, 15)); // NOI18N
+        txtDiaRegisterD.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTFDiasActionPerformed(evt);
+                txtDiaRegisterDActionPerformed(evt);
             }
         });
-        PanelDE.add(jTFDias, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 560, -1, 30));
+        PanelDE.add(txtDiaRegisterD, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 560, -1, 30));
 
-        jTFMeses.setFont(new java.awt.Font("Poppins", 0, 15)); // NOI18N
-        PanelDE.add(jTFMeses, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 560, 140, 30));
+        txtNumeroMesRegisterD.setFont(new java.awt.Font("Poppins", 0, 15)); // NOI18N
+        PanelDE.add(txtNumeroMesRegisterD, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 560, 140, 30));
 
-        jLabel7.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(85, 85, 85));
-        jLabel7.setText("Numero del mes");
-        PanelDE.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 530, 140, -1));
+        jLabelMesRD.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
+        jLabelMesRD.setForeground(new java.awt.Color(85, 85, 85));
+        jLabelMesRD.setText("Numero del mes");
+        PanelDE.add(jLabelMesRD, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 530, 140, -1));
 
-        jLabel8.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(85, 85, 85));
-        jLabel8.setText("Año");
-        PanelDE.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 530, -1, -1));
+        jLabelAnioRD.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
+        jLabelAnioRD.setForeground(new java.awt.Color(85, 85, 85));
+        jLabelAnioRD.setText("Año");
+        PanelDE.add(jLabelAnioRD, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 530, -1, -1));
 
-        jTFAnio.setFont(new java.awt.Font("Poppins", 0, 15)); // NOI18N
-        PanelDE.add(jTFAnio, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 560, -1, 30));
+        txtAnioRegisterD.setFont(new java.awt.Font("Poppins", 0, 15)); // NOI18N
+        PanelDE.add(txtAnioRegisterD, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 560, -1, 30));
 
-        jLabel6.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(85, 85, 85));
-        jLabel6.setText("Carrera profesional");
-        PanelDE.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 630, -1, -1));
+        jLabelCarreraRD.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
+        jLabelCarreraRD.setForeground(new java.awt.Color(85, 85, 85));
+        jLabelCarreraRD.setText("Carrera profesional");
+        PanelDE.add(jLabelCarreraRD, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 630, -1, -1));
 
-        jTFCarreraProfesional.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jTFCarreraProfesional.setForeground(new java.awt.Color(85, 85, 85));
-        PanelDE.add(jTFCarreraProfesional, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 670, 410, 40));
+        txtCarreraProfesionalRegisterD.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        txtCarreraProfesionalRegisterD.setForeground(new java.awt.Color(85, 85, 85));
+        PanelDE.add(txtCarreraProfesionalRegisterD, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 670, 410, 40));
 
-        btnSiguiente.setBackground(new java.awt.Color(253, 116, 1));
-        btnSiguiente.setFont(new java.awt.Font("Poppins SemiBold", 0, 20)); // NOI18N
-        btnSiguiente.setForeground(new java.awt.Color(255, 255, 255));
-        btnSiguiente.setText("Siguiente");
-        btnSiguiente.setFocusable(false);
-        PanelDE.add(btnSiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 770, 410, 50));
+        btnSiguienteRegisterD.setBackground(new java.awt.Color(253, 116, 1));
+        btnSiguienteRegisterD.setFont(new java.awt.Font("Poppins SemiBold", 0, 20)); // NOI18N
+        btnSiguienteRegisterD.setForeground(new java.awt.Color(255, 255, 255));
+        btnSiguienteRegisterD.setText("Siguiente");
+        btnSiguienteRegisterD.setFocusable(false);
+        PanelDE.add(btnSiguienteRegisterD, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 770, 410, 50));
 
         Panelimg.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/password.png"))); // NOI18N
-        Panelimg.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(74, 94, 850, 780));
+        jLabelImg.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/password.png"))); // NOI18N
+        Panelimg.add(jLabelImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(74, 94, 850, 780));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -162,9 +162,9 @@ public class RegisterDocente1 extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTFDiasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTFDiasActionPerformed
+    private void txtDiaRegisterDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDiaRegisterDActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTFDiasActionPerformed
+    }//GEN-LAST:event_txtDiaRegisterDActionPerformed
 
     /**
      * @param args the command line arguments
@@ -208,23 +208,23 @@ public class RegisterDocente1 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel PanelDE;
     private javax.swing.JPanel Panelimg;
-    public javax.swing.JButton btnSiguiente;
+    public javax.swing.JButton btnSiguienteRegisterD;
     private javax.swing.JLabel icon;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JTextField jTFAnio;
-    private javax.swing.JTextField jTFApellidos;
-    private javax.swing.JTextField jTFCarreraProfesional;
-    private javax.swing.JTextField jTFDias;
-    private javax.swing.JTextField jTFMeses;
-    private javax.swing.JTextField jTFNombre;
-    private javax.swing.JLabel registrarse;
+    private javax.swing.JLabel jLabelAnioRD;
+    private javax.swing.JLabel jLabelApellidosRD;
+    private javax.swing.JLabel jLabelCarreraRD;
+    private javax.swing.JLabel jLabelDiaRD;
+    private javax.swing.JLabel jLabelFechaRD;
+    private javax.swing.JLabel jLabelImg;
+    private javax.swing.JLabel jLabelMesRD;
+    private javax.swing.JLabel jLabelNombreRD;
+    private javax.swing.JLabel labelDocente;
     private javax.swing.JLabel title;
+    public javax.swing.JTextField txtAnioRegisterD;
+    public javax.swing.JTextField txtApellidosRegisterD;
+    public javax.swing.JTextField txtCarreraProfesionalRegisterD;
+    public javax.swing.JTextField txtDiaRegisterD;
+    public javax.swing.JTextField txtNombreRegisterDocente;
+    public javax.swing.JTextField txtNumeroMesRegisterD;
     // End of variables declaration//GEN-END:variables
 }
