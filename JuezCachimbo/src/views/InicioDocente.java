@@ -25,27 +25,26 @@ public class InicioDocente extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        bgInicio = new javax.swing.JPanel();
+        bgInicioDocente = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
+        jScrollPaneRanking = new javax.swing.JScrollPane();
         jTableRanking = new javax.swing.JTable();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        bgInicio.setBackground(new java.awt.Color(241, 243, 246));
-        bgInicio.setPreferredSize(new java.awt.Dimension(1260, 850));
-        bgInicio.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        bgInicioDocente.setBackground(new java.awt.Color(241, 243, 246));
+        bgInicioDocente.setPreferredSize(new java.awt.Dimension(1260, 850));
+        bgInicioDocente.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Poppins SemiBold", 0, 20)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(253, 116, 1));
         jLabel1.setText("Ranking de estudiantes");
-        bgInicio.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, -1, -1));
+        bgInicioDocente.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, -1, -1));
 
-        jScrollPane1.setBackground(new java.awt.Color(241, 243, 246));
-        jScrollPane1.setFocusable(false);
-        jScrollPane1.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
+        jScrollPaneRanking.setBackground(new java.awt.Color(255, 255, 255));
+        jScrollPaneRanking.setFocusable(false);
+        jScrollPaneRanking.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
 
-        jTableRanking.setBackground(new java.awt.Color(241, 243, 246));
         jTableRanking.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         jTableRanking.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -73,18 +72,18 @@ public class InicioDocente extends javax.swing.JPanel {
         jTableRanking.setShowGrid(false);
         jTableRanking.setShowHorizontalLines(true);
         jTableRanking.setShowVerticalLines(true);
-        jScrollPane1.setViewportView(jTableRanking);
+        jScrollPaneRanking.setViewportView(jTableRanking);
 
-        bgInicio.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, 1140, 660));
+        bgInicioDocente.add(jScrollPaneRanking, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, 1140, 660));
 
-        add(bgInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1274, -1));
+        add(bgInicioDocente, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1274, -1));
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel bgInicio;
+    private javax.swing.JPanel bgInicioDocente;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPaneRanking;
     private javax.swing.JTable jTableRanking;
     // End of variables declaration//GEN-END:variables
 }

@@ -19,162 +19,162 @@ public class EstadisticasEstudiante extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        bgPerfil = new javax.swing.JPanel();
+        bgEstadisticas = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
+        jPanelTextosLeidos = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
+        jLabelTextosInocrrectos = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
+        jLabelTextosLeidos = new javax.swing.JLabel();
+        jLabelTextosCorrectos = new javax.swing.JLabel();
+        jPanelFotoPerfil = new javax.swing.JPanel();
+        jLabelUsernameStaticsE = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
+        jPanelPreguntasRespondidas = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
+        jLabelPreguntasTotales = new javax.swing.JLabel();
+        jLabelPreguntasCorrectas = new javax.swing.JLabel();
+        jLabelPreguntasIncorrectas = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
-        jLabelPercent3 = new javax.swing.JLabel();
-        jLabelPercent1 = new javax.swing.JLabel();
-        jLabelPercent2 = new javax.swing.JLabel();
+        jPanelRanking = new javax.swing.JPanel();
+        jLabelPorcentajeTxtCorrecto = new javax.swing.JLabel();
+        labelPorcentajeTxtIncorrectos = new javax.swing.JLabel();
+        jLabelPorcentajeTxtMixto = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
-        jLabel26 = new javax.swing.JLabel();
+        labelBreadCrumbsStaticsE = new javax.swing.JLabel();
 
-        bgPerfil.setBackground(new java.awt.Color(241, 243, 246));
-        bgPerfil.setPreferredSize(new java.awt.Dimension(1260, 850));
-        bgPerfil.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        bgEstadisticas.setBackground(new java.awt.Color(241, 243, 246));
+        bgEstadisticas.setPreferredSize(new java.awt.Dimension(1260, 850));
+        bgEstadisticas.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Poppins SemiBold", 0, 20)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(253, 116, 1));
         jLabel1.setText("Textos leídos");
-        bgPerfil.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, -1, -1));
+        bgEstadisticas.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, -1, -1));
 
-        jPanel1.setBackground(new java.awt.Color(241, 243, 246));
-        jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(243, 213, 190), new java.awt.Color(243, 213, 190)));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanelTextosLeidos.setBackground(new java.awt.Color(241, 243, 246));
+        jPanelTextosLeidos.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(243, 213, 190), new java.awt.Color(243, 213, 190)));
+        jPanelTextosLeidos.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel9.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
         jLabel9.setText("Cantidad de textos en los que respondió incorrectamenta todas las preguntas:");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, -1, -1));
+        jPanelTextosLeidos.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, -1, -1));
 
         jLabel10.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
         jLabel10.setText("Cantidad de textos en los que respondió correctamente todas las preguntas:");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, -1, -1));
+        jPanelTextosLeidos.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, -1, -1));
 
-        jLabel19.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
-        jLabel19.setText("{cantidad}");
-        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 80, -1, -1));
+        jLabelTextosInocrrectos.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabelTextosInocrrectos.setText("{cantidad}");
+        jPanelTextosLeidos.add(jLabelTextosInocrrectos, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 80, -1, -1));
 
         jLabel20.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
         jLabel20.setText("Cantidad de textos leídos:");
-        jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+        jPanelTextosLeidos.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
 
-        jLabel21.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
-        jLabel21.setText("{cantidad}");
-        jPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 20, -1, -1));
+        jLabelTextosLeidos.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabelTextosLeidos.setText("{cantidad}");
+        jPanelTextosLeidos.add(jLabelTextosLeidos, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 20, -1, -1));
 
-        jLabel22.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
-        jLabel22.setText("{cantidad}");
-        jPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 50, -1, -1));
+        jLabelTextosCorrectos.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabelTextosCorrectos.setText("{cantidad}");
+        jPanelTextosLeidos.add(jLabelTextosCorrectos, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 50, -1, -1));
 
-        bgPerfil.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 210, 880, 130));
+        bgEstadisticas.add(jPanelTextosLeidos, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 210, 880, 130));
 
-        jPanel2.setBackground(new java.awt.Color(241, 243, 246));
-        jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(243, 213, 190), new java.awt.Color(243, 213, 190)));
+        jPanelFotoPerfil.setBackground(new java.awt.Color(241, 243, 246));
+        jPanelFotoPerfil.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(243, 213, 190), new java.awt.Color(243, 213, 190)));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout jPanelFotoPerfilLayout = new javax.swing.GroupLayout(jPanelFotoPerfil);
+        jPanelFotoPerfil.setLayout(jPanelFotoPerfilLayout);
+        jPanelFotoPerfilLayout.setHorizontalGroup(
+            jPanelFotoPerfilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 76, Short.MAX_VALUE)
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        jPanelFotoPerfilLayout.setVerticalGroup(
+            jPanelFotoPerfilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 76, Short.MAX_VALUE)
         );
 
-        bgPerfil.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 30, 80, 80));
+        bgEstadisticas.add(jPanelFotoPerfil, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 30, 80, 80));
 
-        jLabel4.setFont(new java.awt.Font("Poppins Medium", 0, 14)); // NOI18N
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("{Username}");
-        bgPerfil.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 120, 100, -1));
+        jLabelUsernameStaticsE.setFont(new java.awt.Font("Poppins Medium", 0, 14)); // NOI18N
+        jLabelUsernameStaticsE.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelUsernameStaticsE.setText("{Username}");
+        bgEstadisticas.add(jLabelUsernameStaticsE, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 120, 100, -1));
 
         jLabel5.setFont(new java.awt.Font("Poppins SemiBold", 0, 20)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(253, 116, 1));
         jLabel5.setText("Preguntas respondidas");
-        bgPerfil.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 350, -1, -1));
+        bgEstadisticas.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 350, -1, -1));
 
-        jPanel3.setBackground(new java.awt.Color(241, 243, 246));
-        jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(243, 213, 190), new java.awt.Color(243, 213, 190)));
-        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanelPreguntasRespondidas.setBackground(new java.awt.Color(241, 243, 246));
+        jPanelPreguntasRespondidas.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(243, 213, 190), new java.awt.Color(243, 213, 190)));
+        jPanelPreguntasRespondidas.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
         jLabel2.setText("Preguntas incorrectas:");
-        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, -1, -1));
+        jPanelPreguntasRespondidas.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
         jLabel3.setText("Cantidad de preguntas respondidas:");
-        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+        jPanelPreguntasRespondidas.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
         jLabel7.setText("Preguntas correctas:");
-        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, -1, -1));
+        jPanelPreguntasRespondidas.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, -1, -1));
 
-        jLabel23.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
-        jLabel23.setText("{cantidad}");
-        jPanel3.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 20, -1, -1));
+        jLabelPreguntasTotales.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabelPreguntasTotales.setText("{cantidad}");
+        jPanelPreguntasRespondidas.add(jLabelPreguntasTotales, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 20, -1, -1));
 
-        jLabel24.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
-        jLabel24.setText("{cantidad}");
-        jPanel3.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 50, -1, -1));
+        jLabelPreguntasCorrectas.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabelPreguntasCorrectas.setText("{cantidad}");
+        jPanelPreguntasRespondidas.add(jLabelPreguntasCorrectas, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 50, -1, -1));
 
-        jLabel25.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
-        jLabel25.setText("{cantidad}");
-        jPanel3.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, -1, -1));
+        jLabelPreguntasIncorrectas.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabelPreguntasIncorrectas.setText("{cantidad}");
+        jPanelPreguntasRespondidas.add(jLabelPreguntasIncorrectas, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, -1, -1));
 
-        bgPerfil.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 390, 880, 130));
+        bgEstadisticas.add(jPanelPreguntasRespondidas, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 390, 880, 130));
 
         jLabel6.setFont(new java.awt.Font("Poppins SemiBold", 0, 20)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(253, 116, 1));
         jLabel6.setText("Ranking de preguntas contestadas");
-        bgPerfil.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 540, -1, -1));
+        bgEstadisticas.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 540, -1, -1));
 
-        jPanel4.setBackground(new java.awt.Color(241, 243, 246));
-        jPanel4.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(243, 213, 190), new java.awt.Color(243, 213, 190)));
-        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanelRanking.setBackground(new java.awt.Color(241, 243, 246));
+        jPanelRanking.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(243, 213, 190), new java.awt.Color(243, 213, 190)));
+        jPanelRanking.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabelPercent3.setBackground(new java.awt.Color(255, 255, 255));
-        jLabelPercent3.setFont(new java.awt.Font("Poppins SemiBold", 1, 18)); // NOI18N
-        jLabelPercent3.setForeground(new java.awt.Color(253, 116, 1));
-        jLabelPercent3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelPercent3.setText("{Porcentaje3}");
-        jLabelPercent3.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(253, 116, 1), new java.awt.Color(253, 116, 1)));
-        jPanel4.add(jLabelPercent3, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 30, 170, 50));
+        jLabelPorcentajeTxtCorrecto.setBackground(new java.awt.Color(255, 255, 255));
+        jLabelPorcentajeTxtCorrecto.setFont(new java.awt.Font("Poppins SemiBold", 1, 18)); // NOI18N
+        jLabelPorcentajeTxtCorrecto.setForeground(new java.awt.Color(253, 116, 1));
+        jLabelPorcentajeTxtCorrecto.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelPorcentajeTxtCorrecto.setText("{Porcentaje3}");
+        jLabelPorcentajeTxtCorrecto.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(253, 116, 1), new java.awt.Color(253, 116, 1)));
+        jPanelRanking.add(jLabelPorcentajeTxtCorrecto, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 30, 170, 50));
 
-        jLabelPercent1.setBackground(new java.awt.Color(255, 255, 255));
-        jLabelPercent1.setFont(new java.awt.Font("Poppins SemiBold", 1, 18)); // NOI18N
-        jLabelPercent1.setForeground(new java.awt.Color(253, 116, 1));
-        jLabelPercent1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelPercent1.setText("{Porcentaje1}");
-        jLabelPercent1.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(253, 116, 1), new java.awt.Color(253, 116, 1)));
-        jPanel4.add(jLabelPercent1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, 170, 50));
+        labelPorcentajeTxtIncorrectos.setBackground(new java.awt.Color(255, 255, 255));
+        labelPorcentajeTxtIncorrectos.setFont(new java.awt.Font("Poppins SemiBold", 1, 18)); // NOI18N
+        labelPorcentajeTxtIncorrectos.setForeground(new java.awt.Color(253, 116, 1));
+        labelPorcentajeTxtIncorrectos.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelPorcentajeTxtIncorrectos.setText("{Porcentaje1}");
+        labelPorcentajeTxtIncorrectos.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(253, 116, 1), new java.awt.Color(253, 116, 1)));
+        jPanelRanking.add(labelPorcentajeTxtIncorrectos, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, 170, 50));
 
-        jLabelPercent2.setBackground(new java.awt.Color(255, 255, 255));
-        jLabelPercent2.setFont(new java.awt.Font("Poppins SemiBold", 1, 18)); // NOI18N
-        jLabelPercent2.setForeground(new java.awt.Color(253, 116, 1));
-        jLabelPercent2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelPercent2.setText("{Porcentaje2}");
-        jLabelPercent2.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(253, 116, 1), new java.awt.Color(253, 116, 1)));
-        jPanel4.add(jLabelPercent2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 30, 170, 50));
+        jLabelPorcentajeTxtMixto.setBackground(new java.awt.Color(255, 255, 255));
+        jLabelPorcentajeTxtMixto.setFont(new java.awt.Font("Poppins SemiBold", 1, 18)); // NOI18N
+        jLabelPorcentajeTxtMixto.setForeground(new java.awt.Color(253, 116, 1));
+        jLabelPorcentajeTxtMixto.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelPorcentajeTxtMixto.setText("{Porcentaje2}");
+        jLabelPorcentajeTxtMixto.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(253, 116, 1), new java.awt.Color(253, 116, 1)));
+        jPanelRanking.add(jLabelPorcentajeTxtMixto, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 30, 170, 50));
 
         jLabel11.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(253, 116, 1));
@@ -182,7 +182,7 @@ public class EstadisticasEstudiante extends javax.swing.JPanel {
         jLabel11.setText("<html><p align=\"center\">Porcentaje de textos que el estudiante falló todas las preguntas.</p></html>");
         jLabel11.setAutoscrolls(true);
         jLabel11.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel4.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, 190, 90));
+        jPanelRanking.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, 190, 90));
 
         jLabel14.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(253, 116, 1));
@@ -190,7 +190,7 @@ public class EstadisticasEstudiante extends javax.swing.JPanel {
         jLabel14.setText("<html><p align=\"center\">Porcentaje de textos en lo que el estudiante marco la resupuesta correcta e incorrecta.</p></html>");
         jLabel14.setAutoscrolls(true);
         jLabel14.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel4.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 90, 270, 90));
+        jPanelRanking.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 90, 270, 90));
 
         jLabel17.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(253, 116, 1));
@@ -198,55 +198,55 @@ public class EstadisticasEstudiante extends javax.swing.JPanel {
         jLabel17.setText("<html><p align=\"center\">Porcentaje de textos en los que el estudiante acertó todas las preguntas.</p></html>");
         jLabel17.setAutoscrolls(true);
         jLabel17.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel4.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 90, 230, 90));
+        jPanelRanking.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 90, 230, 90));
 
-        bgPerfil.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 580, 880, 210));
+        bgEstadisticas.add(jPanelRanking, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 580, 880, 210));
 
-        jLabel26.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
-        jLabel26.setText("Juez Cachimbo / Estadísticas");
-        bgPerfil.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
+        labelBreadCrumbsStaticsE.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
+        labelBreadCrumbsStaticsE.setText("Juez Cachimbo / Estadísticas");
+        bgEstadisticas.add(labelBreadCrumbsStaticsE, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bgPerfil, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(bgEstadisticas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bgPerfil, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(bgEstadisticas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel bgPerfil;
+    private javax.swing.JPanel bgEstadisticas;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JLabel jLabelPercent1;
-    private javax.swing.JLabel jLabelPercent2;
-    private javax.swing.JLabel jLabelPercent3;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
+    private javax.swing.JLabel jLabelPorcentajeTxtCorrecto;
+    private javax.swing.JLabel jLabelPorcentajeTxtMixto;
+    private javax.swing.JLabel jLabelPreguntasCorrectas;
+    private javax.swing.JLabel jLabelPreguntasIncorrectas;
+    private javax.swing.JLabel jLabelPreguntasTotales;
+    private javax.swing.JLabel jLabelTextosCorrectos;
+    private javax.swing.JLabel jLabelTextosInocrrectos;
+    private javax.swing.JLabel jLabelTextosLeidos;
+    private javax.swing.JLabel jLabelUsernameStaticsE;
+    private javax.swing.JPanel jPanelFotoPerfil;
+    private javax.swing.JPanel jPanelPreguntasRespondidas;
+    private javax.swing.JPanel jPanelRanking;
+    private javax.swing.JPanel jPanelTextosLeidos;
+    private javax.swing.JLabel labelBreadCrumbsStaticsE;
+    private javax.swing.JLabel labelPorcentajeTxtIncorrectos;
     // End of variables declaration//GEN-END:variables
 }

@@ -45,117 +45,104 @@ public class PanelDocente extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jPanelInicio = new javax.swing.JPanel();
+        jPanelOpcionesDocente = new javax.swing.JPanel();
+        jPanelInicioD = new javax.swing.JPanel();
         jLabelInicio = new javax.swing.JLabel();
-        jPanelPerfil = new javax.swing.JPanel();
+        jPanelPerfilD = new javax.swing.JPanel();
         jLabelPerfil = new javax.swing.JLabel();
-        jPanelSeguimiento = new javax.swing.JPanel();
+        jPanelSeguimientoD = new javax.swing.JPanel();
         jLabelSeguimiento = new javax.swing.JLabel();
-        jPanelCerrarSesion = new javax.swing.JPanel();
+        jPanelCerrarSesionD = new javax.swing.JPanel();
         jLabelCerrarSesion = new javax.swing.JLabel();
-        jPanelEstadisticasGenerales = new javax.swing.JPanel();
+        jPanelEstadisticasGeneralesD = new javax.swing.JPanel();
         jLabelEstadisticaGenerales = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        jLabelDocente = new javax.swing.JLabel();
         title = new javax.swing.JLabel();
         icon = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
+        jPanelBusquedaDocente = new javax.swing.JPanel();
+        txtBusquedaDocente = new javax.swing.JTextField();
+        jLabelLogoBusqueda = new javax.swing.JLabel();
         contenedorPrincipalD = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1650, 953));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanelOpcionesDocente.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelOpcionesDocente.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanelInicio.setBackground(new java.awt.Color(255, 255, 255));
-        jPanelInicio.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanelInicio.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanelInicioD.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelInicioD.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanelInicioD.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabelInicio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/inicio-tamanio1x.png"))); // NOI18N
-        jPanelInicio.add(jLabelInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 180, 60));
+        jPanelInicioD.add(jLabelInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 180, 60));
 
-        jPanel1.add(jPanelInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 390, 62));
+        jPanelOpcionesDocente.add(jPanelInicioD, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 390, 62));
 
-        jPanelPerfil.setBackground(new java.awt.Color(255, 255, 255));
-        jPanelPerfil.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanelPerfil.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanelPerfilD.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelPerfilD.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanelPerfilD.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabelPerfil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/perfil-tamanio1x.png"))); // NOI18N
-        jPanelPerfil.add(jLabelPerfil, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 150, 60));
+        jPanelPerfilD.add(jLabelPerfil, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 150, 60));
 
-        jPanel1.add(jPanelPerfil, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 290, 390, 62));
+        jPanelOpcionesDocente.add(jPanelPerfilD, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 290, 390, 62));
 
-        jPanelSeguimiento.setBackground(new java.awt.Color(255, 255, 255));
-        jPanelSeguimiento.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanelSeguimiento.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanelSeguimientoD.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelSeguimientoD.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanelSeguimientoD.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabelSeguimiento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/seguimiento-tamanio-1x.png"))); // NOI18N
-        jPanelSeguimiento.add(jLabelSeguimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 230, 60));
+        jPanelSeguimientoD.add(jLabelSeguimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 230, 60));
 
-        jPanel1.add(jPanelSeguimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 360, 390, 62));
+        jPanelOpcionesDocente.add(jPanelSeguimientoD, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 360, 390, 62));
 
-        jPanelCerrarSesion.setBackground(new java.awt.Color(255, 255, 255));
-        jPanelCerrarSesion.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanelCerrarSesion.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanelCerrarSesionD.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelCerrarSesionD.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanelCerrarSesionD.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabelCerrarSesion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/log-out-tamanio1x.png"))); // NOI18N
-        jPanelCerrarSesion.add(jLabelCerrarSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, -1, 60));
+        jPanelCerrarSesionD.add(jLabelCerrarSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, -1, 60));
 
-        jPanel1.add(jPanelCerrarSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 830, 390, 62));
+        jPanelOpcionesDocente.add(jPanelCerrarSesionD, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 830, 390, 62));
 
-        jPanelEstadisticasGenerales.setBackground(new java.awt.Color(255, 255, 255));
-        jPanelEstadisticasGenerales.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanelEstadisticasGenerales.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanelEstadisticasGeneralesD.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelEstadisticasGeneralesD.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanelEstadisticasGeneralesD.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabelEstadisticaGenerales.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/estadisticas-generales-tamanio-1x.png"))); // NOI18N
-        jPanelEstadisticasGenerales.add(jLabelEstadisticaGenerales, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 330, 60));
+        jPanelEstadisticasGeneralesD.add(jLabelEstadisticaGenerales, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 330, 60));
 
-        jPanel1.add(jPanelEstadisticasGenerales, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 430, 390, 62));
+        jPanelOpcionesDocente.add(jPanelEstadisticasGeneralesD, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 430, 390, 62));
 
-        jLabel6.setFont(new java.awt.Font("Poppins SemiBold", 1, 18)); // NOI18N
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("Docente");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, 130, 30));
+        jLabelDocente.setFont(new java.awt.Font("Poppins SemiBold", 1, 18)); // NOI18N
+        jLabelDocente.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelDocente.setText("Docente");
+        jPanelOpcionesDocente.add(jLabelDocente, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, 130, 30));
 
         title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         title.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Juez_cachimbp.png"))); // NOI18N
-        jPanel1.add(title, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 30, 210, 100));
+        jPanelOpcionesDocente.add(title, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 30, 210, 100));
 
         icon.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         icon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/logo.png"))); // NOI18N
-        jPanel1.add(icon, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 100, 100));
+        jPanelOpcionesDocente.add(icon, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 100, 100));
 
-        jPanel2.setBackground(new java.awt.Color(241, 243, 246));
+        getContentPane().add(jPanelOpcionesDocente, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 953));
 
-        jTextField1.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
-        jTextField1.setForeground(new java.awt.Color(85, 85, 85));
+        jPanelBusquedaDocente.setBackground(new java.awt.Color(241, 243, 246));
+        jPanelBusquedaDocente.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/search 1.png"))); // NOI18N
+        txtBusquedaDocente.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
+        txtBusquedaDocente.setForeground(new java.awt.Color(85, 85, 85));
+        jPanelBusquedaDocente.add(txtBusquedaDocente, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 30, 419, 32));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap(361, Short.MAX_VALUE)
-                .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 419, Short.MAX_VALUE)
-                .addGap(10, 10, 10)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(360, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(38, Short.MAX_VALUE))
-        );
+        jLabelLogoBusqueda.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelLogoBusqueda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/search 1.png"))); // NOI18N
+        jPanelBusquedaDocente.add(jLabelLogoBusqueda, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 30, 30, 30));
+
+        getContentPane().add(jPanelBusquedaDocente, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 0, 1260, 90));
 
         contenedorPrincipalD.setBackground(new java.awt.Color(241, 243, 246));
 
@@ -167,29 +154,10 @@ public class PanelDocente extends javax.swing.JFrame {
         );
         contenedorPrincipalDLayout.setVerticalGroup(
             contenedorPrincipalDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 850, Short.MAX_VALUE)
         );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(contenedorPrincipalD, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(contenedorPrincipalD, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 953, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
+        getContentPane().add(contenedorPrincipalD, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 93, 1260, 850));
 
         pack();
         setLocationRelativeTo(null);
@@ -236,21 +204,21 @@ public class PanelDocente extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JPanel contenedorPrincipalD;
     private javax.swing.JLabel icon;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel6;
     public javax.swing.JLabel jLabelCerrarSesion;
+    private javax.swing.JLabel jLabelDocente;
     public javax.swing.JLabel jLabelEstadisticaGenerales;
     public javax.swing.JLabel jLabelInicio;
+    private javax.swing.JLabel jLabelLogoBusqueda;
     public javax.swing.JLabel jLabelPerfil;
     public javax.swing.JLabel jLabelSeguimiento;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    public javax.swing.JPanel jPanelCerrarSesion;
-    public javax.swing.JPanel jPanelEstadisticasGenerales;
-    public javax.swing.JPanel jPanelInicio;
-    public javax.swing.JPanel jPanelPerfil;
-    public javax.swing.JPanel jPanelSeguimiento;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JPanel jPanelBusquedaDocente;
+    public javax.swing.JPanel jPanelCerrarSesionD;
+    public javax.swing.JPanel jPanelEstadisticasGeneralesD;
+    public javax.swing.JPanel jPanelInicioD;
+    private javax.swing.JPanel jPanelOpcionesDocente;
+    public javax.swing.JPanel jPanelPerfilD;
+    public javax.swing.JPanel jPanelSeguimientoD;
     private javax.swing.JLabel title;
+    private javax.swing.JTextField txtBusquedaDocente;
     // End of variables declaration//GEN-END:variables
 }

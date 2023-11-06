@@ -29,306 +29,182 @@ public class PracticarResolucion extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        buttonGroup1 = new javax.swing.ButtonGroup();
-        buttonGroup2 = new javax.swing.ButtonGroup();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel26 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jPanel7 = new javax.swing.JPanel();
-        jLabel10 = new javax.swing.JLabel();
+        rbtnGrupo1 = new javax.swing.ButtonGroup();
+        rbtnGrupo2 = new javax.swing.ButtonGroup();
+        bgPracticarResolucion = new javax.swing.JPanel();
+        jLabelBCPracticarRe = new javax.swing.JLabel();
+        jScrollPaneResolucion = new javax.swing.JScrollPane();
+        jPanelTxtPreguntas = new javax.swing.JPanel();
+        jLabelIDTxt = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        jPanel6 = new javax.swing.JPanel();
-        jLabel11 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        jRadioButton4 = new javax.swing.JRadioButton();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jRadioButton5 = new javax.swing.JRadioButton();
-        jRadioButton6 = new javax.swing.JRadioButton();
-        jRadioButton7 = new javax.swing.JRadioButton();
-        jRadioButton8 = new javax.swing.JRadioButton();
-        jRadioButton9 = new javax.swing.JRadioButton();
-        jPanel5 = new javax.swing.JPanel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jRadioButton10 = new javax.swing.JRadioButton();
-        jRadioButton11 = new javax.swing.JRadioButton();
-        jRadioButton12 = new javax.swing.JRadioButton();
-        jRadioButton13 = new javax.swing.JRadioButton();
-        jRadioButton14 = new javax.swing.JRadioButton();
-        jPanel8 = new javax.swing.JPanel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jRadioButton15 = new javax.swing.JRadioButton();
-        jRadioButton16 = new javax.swing.JRadioButton();
-        jRadioButton17 = new javax.swing.JRadioButton();
-        jRadioButton18 = new javax.swing.JRadioButton();
-        jRadioButton19 = new javax.swing.JRadioButton();
-        jPanel9 = new javax.swing.JPanel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jRadioButton20 = new javax.swing.JRadioButton();
-        jRadioButton21 = new javax.swing.JRadioButton();
-        jRadioButton22 = new javax.swing.JRadioButton();
-        jRadioButton23 = new javax.swing.JRadioButton();
-        jRadioButton24 = new javax.swing.JRadioButton();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        jPanelContenedorTexto = new javax.swing.JPanel();
+        jLabelTextoEstudiante = new javax.swing.JLabel();
+        jPanelContenedorPreguntas = new javax.swing.JPanel();
+        jPanelPregunta = new javax.swing.JPanel();
+        jLabelNumPregunta = new javax.swing.JLabel();
+        jLabelEnunciado = new javax.swing.JLabel();
+        jLabelAlternativas = new javax.swing.JLabel();
+        rbtnAlternativaA = new javax.swing.JRadioButton();
+        rbtnAlternativaB = new javax.swing.JRadioButton();
+        rbtnAlternativaC = new javax.swing.JRadioButton();
+        rbtnAlternativaD = new javax.swing.JRadioButton();
+        rbtnAlternativaE = new javax.swing.JRadioButton();
+        jPanelPregunta2 = new javax.swing.JPanel();
+        jLabelNumPregunta2 = new javax.swing.JLabel();
+        jLabelEnunciado2 = new javax.swing.JLabel();
+        jLabelAlternativas2 = new javax.swing.JLabel();
+        rbtnAlternativaA2 = new javax.swing.JRadioButton();
+        rbtnAlternativaB2 = new javax.swing.JRadioButton();
+        rbtnAlternativaC2 = new javax.swing.JRadioButton();
+        rbtnAlternativaD2 = new javax.swing.JRadioButton();
+        rbtnAlternativaE2 = new javax.swing.JRadioButton();
+        btnCancelar = new javax.swing.JButton();
+        btnFinalizar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        bgPracticarResolucion.setBackground(new java.awt.Color(255, 255, 255));
+        bgPracticarResolucion.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel26.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
-        jLabel26.setText("Juez Cachimbo / Practicar / Resolución");
-        jPanel1.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
+        jLabelBCPracticarRe.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
+        jLabelBCPracticarRe.setText("Juez Cachimbo / Practicar / Resolución");
+        bgPracticarResolucion.add(jLabelBCPracticarRe, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
 
-        jScrollPane1.setColumnHeaderView(null);
+        jScrollPaneResolucion.setColumnHeaderView(null);
 
-        jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanelTxtPreguntas.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel10.setFont(new java.awt.Font("Poppins SemiBold", 0, 18)); // NOI18N
-        jLabel10.setText("ID: {id_texto}");
-        jPanel7.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, -1, -1));
-        jPanel7.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 870, -1));
+        jLabelIDTxt.setFont(new java.awt.Font("Poppins SemiBold", 0, 18)); // NOI18N
+        jLabelIDTxt.setText("ID: {id_texto}");
+        jPanelTxtPreguntas.add(jLabelIDTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, -1, -1));
+        jPanelTxtPreguntas.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 870, -1));
 
-        jPanel6.setLayout(new java.awt.GridLayout(1, 0));
+        jPanelContenedorTexto.setLayout(new java.awt.GridLayout(1, 0));
 
-        jLabel11.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
-        jLabel11.setText("<html><p>knbrebvubervubpievbibiwvebibpeiwvbibbwib2yievbypbwylkbypwveolqhvwvdhfvjlvlasaljevouvaeLorem ipsum dolor sit amet consectetur adipisicing elit. Fuga fugiat dolorem voluptatem architecto nulla dicta, distinctio natus accusamus sit temporibus et error tempore voluptates in optio quasi sequi? Eaque accusantium maiores eum modi reprehenderit voluptates praesentium tenetur vero? Et officia assumenda culpa, quos eaque magnam dolores facere eum quod nemo, neque, quisquam obcaecati asperiores ad dignissimos reprehenderit quaerat eligendi tempore. Doloremque deserunt distinctio qui hic ipsum, eius nulla iusto dolorem laborum molestias, saepe eveniet odio, fuga officia! Maiores corrupti animi quas officiis alias reiciendis pariatur quibusdam eos iure sit. Debitis unde, porro dicta provident blanditiis ea laudantium quasi sed, quam autem numquam cumque deserunt iure ipsa minima nihil suscipit, temporibus alias ad aperiam? kjryiqvveaiuucgnqob73qct4bjehdcwisivsdibibdskwebviunuwweipuvweubevubevefvbuoevuibeuibvefuiebvbdkjnajkñdnjkfdibeivew Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga fugiat dolorem voluptatem architecto nulla dicta, distinctio natus accusamus sit temporibus et error tempore voluptates in optio quasi sequi? Eaque accusantium maiores eum modi reprehenderit voluptates praesentium tenetur vero? Et officia assumenda culpa, quos eaque magnam dolores facere eum quod nemo, neque, quisquam obcaecati asperiores ad dignissimos reprehenderit quaerat eligendi tempore. Doloremque deserunt distinctio qui hic ipsum, eius nulla iusto dolorem laborum molestias, saepe eveniet odio, fuga officia! Maiores corrupti animi quas officiis alias reiciendis pariatur quibusdam eos iure sit. Debitis unde, porro dicta provident blanditiis ea laudantium quasi sed, quam autem numquam cumque deserunt iure ipsa minima nihil suscipit, temporibus alias ad aperiam? </p></html>");
-        jLabel11.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        jLabel11.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        jPanel6.add(jLabel11);
+        jLabelTextoEstudiante.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
+        jLabelTextoEstudiante.setText("<html><p>knbrebvubervubpievbibiwvebibpeiwvbibbwib2yievbypbwylkbypwveolqhvwvdhfvjlvlasaljevouvaeLorem ipsum dolor sit amet consectetur adipisicing elit. Fuga fugiat dolorem voluptatem architecto nulla dicta, distinctio natus accusamus sit temporibus et error tempore voluptates in optio quasi sequi? Eaque accusantium maiores eum modi reprehenderit voluptates praesentium tenetur vero? Et officia assumenda culpa, quos eaque magnam dolores facere eum quod nemo, neque, quisquam obcaecati asperiores ad dignissimos reprehenderit quaerat eligendi tempore. Doloremque deserunt distinctio qui hic ipsum, eius nulla iusto dolorem laborum molestias, saepe eveniet odio, fuga officia! Maiores corrupti animi quas officiis alias reiciendis pariatur quibusdam eos iure sit. Debitis unde, porro dicta provident blanditiis ea laudantium quasi sed, quam autem numquam cumque deserunt iure ipsa minima nihil suscipit, temporibus alias ad aperiam? kjryiqvveaiuucgnqob73qct4bjehdcwisivsdibibdskwebviunuwweipuvweubevubevefvbuoevuibeuibvefuiebvbdkjnajkñdnjkfdibeivew Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga fugiat dolorem voluptatem architecto nulla dicta, distinctio natus accusamus sit temporibus et error tempore voluptates in optio quasi sequi? Eaque accusantium maiores eum modi reprehenderit voluptates praesentium tenetur vero? Et officia assumenda culpa, quos eaque magnam dolores facere eum quod nemo, neque, quisquam obcaecati asperiores ad dignissimos reprehenderit quaerat eligendi tempore. Doloremque deserunt distinctio qui hic ipsum, eius nulla iusto dolorem laborum molestias, saepe eveniet odio, fuga officia! Maiores corrupti animi quas officiis alias reiciendis pariatur quibusdam eos iure sit. Debitis unde, porro dicta provident blanditiis ea laudantium quasi sed, quam autem numquam cumque deserunt iure ipsa minima nihil suscipit, temporibus alias ad aperiam? </p></html>");
+        jLabelTextoEstudiante.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jLabelTextoEstudiante.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        jPanelContenedorTexto.add(jLabelTextoEstudiante);
 
-        jPanel7.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, 880, 490));
+        jPanelTxtPreguntas.add(jPanelContenedorTexto, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, 880, 490));
 
-        jPanel2.setLayout(new javax.swing.BoxLayout(jPanel2, javax.swing.BoxLayout.PAGE_AXIS));
+        jPanelContenedorPreguntas.setLayout(new javax.swing.BoxLayout(jPanelContenedorPreguntas, javax.swing.BoxLayout.PAGE_AXIS));
 
-        jPanel3.setLayout(new java.awt.GridLayout(9, 0));
+        jPanelPregunta.setLayout(new java.awt.GridLayout(9, 0));
 
-        jLabel1.setText("jLabel1");
-        jPanel3.add(jLabel1);
+        jLabelNumPregunta.setFont(new java.awt.Font("Poppins SemiBold", 0, 18)); // NOI18N
+        jLabelNumPregunta.setText("Pregunta 01");
+        jPanelPregunta.add(jLabelNumPregunta);
 
-        jLabel2.setFont(new java.awt.Font("Poppins SemiBold", 0, 18)); // NOI18N
-        jLabel2.setText("Pregunta 01");
-        jPanel3.add(jLabel2);
+        jLabelEnunciado.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        jLabelEnunciado.setText("Enunciado");
+        jPanelPregunta.add(jLabelEnunciado);
 
-        jLabel3.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jLabel3.setText("Enunciado");
-        jPanel3.add(jLabel3);
+        jLabelAlternativas.setFont(new java.awt.Font("Poppins SemiBold", 0, 18)); // NOI18N
+        jLabelAlternativas.setText("Alternativas");
+        jPanelPregunta.add(jLabelAlternativas);
 
-        jLabel4.setFont(new java.awt.Font("Poppins SemiBold", 0, 18)); // NOI18N
-        jLabel4.setText("Alternativas");
-        jPanel3.add(jLabel4);
+        rbtnGrupo1.add(rbtnAlternativaA);
+        rbtnAlternativaA.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        rbtnAlternativaA.setText("A) Alternativa 1");
+        jPanelPregunta.add(rbtnAlternativaA);
 
-        jRadioButton1.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jRadioButton1.setText("A) Alternativa 1");
-        jPanel3.add(jRadioButton1);
+        rbtnGrupo1.add(rbtnAlternativaB);
+        rbtnAlternativaB.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        rbtnAlternativaB.setText("B) Alternativa 2");
+        jPanelPregunta.add(rbtnAlternativaB);
 
-        jRadioButton2.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jRadioButton2.setText("B) Alternativa 2");
-        jPanel3.add(jRadioButton2);
+        rbtnGrupo1.add(rbtnAlternativaC);
+        rbtnAlternativaC.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        rbtnAlternativaC.setText("C) Alternativa 3");
+        jPanelPregunta.add(rbtnAlternativaC);
 
-        jRadioButton3.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jRadioButton3.setText("jRadioButton3");
-        jPanel3.add(jRadioButton3);
+        rbtnGrupo1.add(rbtnAlternativaD);
+        rbtnAlternativaD.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        rbtnAlternativaD.setText("D) Alternativa 4");
+        jPanelPregunta.add(rbtnAlternativaD);
 
-        jRadioButton4.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jRadioButton4.setText("jRadioButton4");
-        jPanel3.add(jRadioButton4);
+        rbtnGrupo1.add(rbtnAlternativaE);
+        rbtnAlternativaE.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        rbtnAlternativaE.setText("E) Alternativa 5");
+        jPanelPregunta.add(rbtnAlternativaE);
 
-        jPanel2.add(jPanel3);
+        jPanelContenedorPreguntas.add(jPanelPregunta);
 
-        jPanel4.setLayout(new java.awt.GridLayout(9, 0));
+        jPanelPregunta2.setLayout(new java.awt.GridLayout(9, 0));
 
-        jLabel5.setFont(new java.awt.Font("Poppins SemiBold", 0, 18)); // NOI18N
-        jLabel5.setText("jLabel5");
-        jPanel4.add(jLabel5);
+        jLabelNumPregunta2.setFont(new java.awt.Font("Poppins SemiBold", 0, 18)); // NOI18N
+        jLabelNumPregunta2.setText("Pregunta 02");
+        jPanelPregunta2.add(jLabelNumPregunta2);
 
-        jLabel6.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jLabel6.setText("jLabel6");
-        jPanel4.add(jLabel6);
+        jLabelEnunciado2.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        jLabelEnunciado2.setText("Enunciado");
+        jPanelPregunta2.add(jLabelEnunciado2);
 
-        jLabel7.setFont(new java.awt.Font("Poppins SemiBold", 0, 18)); // NOI18N
-        jLabel7.setText("jLabel7");
-        jPanel4.add(jLabel7);
+        jLabelAlternativas2.setFont(new java.awt.Font("Poppins SemiBold", 0, 18)); // NOI18N
+        jLabelAlternativas2.setText("Alternativas");
+        jPanelPregunta2.add(jLabelAlternativas2);
 
-        jRadioButton5.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jRadioButton5.setText("jRadioButton5");
-        jPanel4.add(jRadioButton5);
+        rbtnGrupo2.add(rbtnAlternativaA2);
+        rbtnAlternativaA2.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        rbtnAlternativaA2.setText("A) Alternativa 1");
+        jPanelPregunta2.add(rbtnAlternativaA2);
 
-        jRadioButton6.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jRadioButton6.setText("jRadioButton6");
-        jPanel4.add(jRadioButton6);
+        rbtnGrupo2.add(rbtnAlternativaB2);
+        rbtnAlternativaB2.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        rbtnAlternativaB2.setText("B) Alternativa 2");
+        jPanelPregunta2.add(rbtnAlternativaB2);
 
-        jRadioButton7.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jRadioButton7.setText("jRadioButton7");
-        jPanel4.add(jRadioButton7);
+        rbtnGrupo2.add(rbtnAlternativaC2);
+        rbtnAlternativaC2.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        rbtnAlternativaC2.setText("C) Alternativa 3");
+        jPanelPregunta2.add(rbtnAlternativaC2);
 
-        jRadioButton8.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jRadioButton8.setText("jRadioButton8");
-        jPanel4.add(jRadioButton8);
+        rbtnGrupo2.add(rbtnAlternativaD2);
+        rbtnAlternativaD2.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        rbtnAlternativaD2.setText("D) Alternativa 4");
+        jPanelPregunta2.add(rbtnAlternativaD2);
 
-        jRadioButton9.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jRadioButton9.setText("jRadioButton9");
-        jPanel4.add(jRadioButton9);
+        rbtnGrupo2.add(rbtnAlternativaE2);
+        rbtnAlternativaE2.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        rbtnAlternativaE2.setText("E) Alternativa 5");
+        jPanelPregunta2.add(rbtnAlternativaE2);
 
-        jPanel2.add(jPanel4);
+        jPanelContenedorPreguntas.add(jPanelPregunta2);
 
-        jPanel5.setLayout(new java.awt.GridLayout(9, 0));
+        jPanelTxtPreguntas.add(jPanelContenedorPreguntas, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 560, 900, 1540));
 
-        jLabel9.setFont(new java.awt.Font("Poppins SemiBold", 0, 18)); // NOI18N
-        jLabel9.setText("jLabel9");
-        jPanel5.add(jLabel9);
+        jScrollPaneResolucion.setViewportView(jPanelTxtPreguntas);
 
-        jLabel8.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jLabel8.setText("jLabel8");
-        jPanel5.add(jLabel8);
+        bgPracticarResolucion.add(jScrollPaneResolucion, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 70, 1020, 760));
 
-        jLabel12.setFont(new java.awt.Font("Poppins SemiBold", 0, 18)); // NOI18N
-        jLabel12.setText("jLabel12");
-        jPanel5.add(jLabel12);
-
-        jRadioButton10.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jRadioButton10.setText("jRadioButton10");
-        jPanel5.add(jRadioButton10);
-
-        jRadioButton11.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jRadioButton11.setText("jRadioButton11");
-        jPanel5.add(jRadioButton11);
-
-        jRadioButton12.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jRadioButton12.setText("jRadioButton12");
-        jPanel5.add(jRadioButton12);
-
-        jRadioButton13.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jRadioButton13.setText("jRadioButton13");
-        jPanel5.add(jRadioButton13);
-
-        jRadioButton14.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jRadioButton14.setText("jRadioButton14");
-        jPanel5.add(jRadioButton14);
-
-        jPanel2.add(jPanel5);
-
-        jPanel8.setLayout(new java.awt.GridLayout(9, 0));
-
-        jLabel13.setFont(new java.awt.Font("Poppins SemiBold", 0, 18)); // NOI18N
-        jLabel13.setText("jLabel13");
-        jPanel8.add(jLabel13);
-
-        jLabel14.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jLabel14.setText("jLabel14");
-        jPanel8.add(jLabel14);
-
-        jLabel15.setFont(new java.awt.Font("Poppins SemiBold", 0, 18)); // NOI18N
-        jLabel15.setText("jLabel15");
-        jPanel8.add(jLabel15);
-
-        jRadioButton15.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jRadioButton15.setText("jRadioButton15");
-        jPanel8.add(jRadioButton15);
-
-        jRadioButton16.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jRadioButton16.setText("jRadioButton16");
-        jPanel8.add(jRadioButton16);
-
-        jRadioButton17.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jRadioButton17.setText("jRadioButton17");
-        jPanel8.add(jRadioButton17);
-
-        jRadioButton18.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jRadioButton18.setText("jRadioButton18");
-        jPanel8.add(jRadioButton18);
-
-        jRadioButton19.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jRadioButton19.setText("jRadioButton19");
-        jPanel8.add(jRadioButton19);
-
-        jPanel2.add(jPanel8);
-
-        jPanel9.setLayout(new java.awt.GridLayout(9, 0));
-
-        jLabel16.setFont(new java.awt.Font("Poppins SemiBold", 0, 18)); // NOI18N
-        jLabel16.setText("jLabel16");
-        jPanel9.add(jLabel16);
-
-        jLabel17.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jLabel17.setText("jLabel17");
-        jPanel9.add(jLabel17);
-
-        jLabel18.setFont(new java.awt.Font("Poppins SemiBold", 0, 18)); // NOI18N
-        jLabel18.setText("jLabel18");
-        jPanel9.add(jLabel18);
-
-        jRadioButton20.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jRadioButton20.setText("jRadioButton20");
-        jPanel9.add(jRadioButton20);
-
-        jRadioButton21.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jRadioButton21.setText("jRadioButton21");
-        jPanel9.add(jRadioButton21);
-
-        jRadioButton22.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jRadioButton22.setText("jRadioButton22");
-        jPanel9.add(jRadioButton22);
-
-        jRadioButton23.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jRadioButton23.setText("jRadioButton23");
-        jPanel9.add(jRadioButton23);
-
-        jRadioButton24.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jRadioButton24.setText("jRadioButton24");
-        jPanel9.add(jRadioButton24);
-
-        jPanel2.add(jPanel9);
-
-        jPanel7.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 560, 900, 1540));
-
-        jScrollPane1.setViewportView(jPanel7);
-
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 70, 1020, 760));
-
-        jButton1.setFont(new java.awt.Font("Poppins SemiBold", 0, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(253, 116, 1));
-        jButton1.setText("Cancelar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnCancelar.setFont(new java.awt.Font("Poppins SemiBold", 0, 18)); // NOI18N
+        btnCancelar.setForeground(new java.awt.Color(253, 116, 1));
+        btnCancelar.setText("Cancelar");
+        btnCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnCancelarActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 860, 140, 40));
+        bgPracticarResolucion.add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 860, 140, 40));
 
-        jButton2.setBackground(new java.awt.Color(253, 116, 1));
-        jButton2.setFont(new java.awt.Font("Poppins SemiBold", 0, 18)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Finalizar");
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 855, 140, 40));
+        btnFinalizar.setBackground(new java.awt.Color(253, 116, 1));
+        btnFinalizar.setFont(new java.awt.Font("Poppins SemiBold", 0, 18)); // NOI18N
+        btnFinalizar.setForeground(new java.awt.Color(255, 255, 255));
+        btnFinalizar.setText("Finalizar");
+        bgPracticarResolucion.add(btnFinalizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 855, 140, 40));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1160, 950));
+        getContentPane().add(bgPracticarResolucion, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1160, 950));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnCancelarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -366,63 +242,36 @@ public class PracticarResolucion extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.ButtonGroup buttonGroup2;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton10;
-    private javax.swing.JRadioButton jRadioButton11;
-    private javax.swing.JRadioButton jRadioButton12;
-    private javax.swing.JRadioButton jRadioButton13;
-    private javax.swing.JRadioButton jRadioButton14;
-    private javax.swing.JRadioButton jRadioButton15;
-    private javax.swing.JRadioButton jRadioButton16;
-    private javax.swing.JRadioButton jRadioButton17;
-    private javax.swing.JRadioButton jRadioButton18;
-    private javax.swing.JRadioButton jRadioButton19;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton20;
-    private javax.swing.JRadioButton jRadioButton21;
-    private javax.swing.JRadioButton jRadioButton22;
-    private javax.swing.JRadioButton jRadioButton23;
-    private javax.swing.JRadioButton jRadioButton24;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4;
-    private javax.swing.JRadioButton jRadioButton5;
-    private javax.swing.JRadioButton jRadioButton6;
-    private javax.swing.JRadioButton jRadioButton7;
-    private javax.swing.JRadioButton jRadioButton8;
-    private javax.swing.JRadioButton jRadioButton9;
-    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JPanel bgPracticarResolucion;
+    private javax.swing.JButton btnCancelar;
+    private javax.swing.JButton btnFinalizar;
+    private javax.swing.JLabel jLabelAlternativas;
+    private javax.swing.JLabel jLabelAlternativas2;
+    private javax.swing.JLabel jLabelBCPracticarRe;
+    private javax.swing.JLabel jLabelEnunciado;
+    private javax.swing.JLabel jLabelEnunciado2;
+    private javax.swing.JLabel jLabelIDTxt;
+    private javax.swing.JLabel jLabelNumPregunta;
+    private javax.swing.JLabel jLabelNumPregunta2;
+    private javax.swing.JLabel jLabelTextoEstudiante;
+    private javax.swing.JPanel jPanelContenedorPreguntas;
+    private javax.swing.JPanel jPanelContenedorTexto;
+    private javax.swing.JPanel jPanelPregunta;
+    private javax.swing.JPanel jPanelPregunta2;
+    private javax.swing.JPanel jPanelTxtPreguntas;
+    private javax.swing.JScrollPane jScrollPaneResolucion;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JRadioButton rbtnAlternativaA;
+    private javax.swing.JRadioButton rbtnAlternativaA2;
+    private javax.swing.JRadioButton rbtnAlternativaB;
+    private javax.swing.JRadioButton rbtnAlternativaB2;
+    private javax.swing.JRadioButton rbtnAlternativaC;
+    private javax.swing.JRadioButton rbtnAlternativaC2;
+    private javax.swing.JRadioButton rbtnAlternativaD;
+    private javax.swing.JRadioButton rbtnAlternativaD2;
+    private javax.swing.JRadioButton rbtnAlternativaE;
+    private javax.swing.JRadioButton rbtnAlternativaE2;
+    private javax.swing.ButtonGroup rbtnGrupo1;
+    private javax.swing.ButtonGroup rbtnGrupo2;
     // End of variables declaration//GEN-END:variables
 }

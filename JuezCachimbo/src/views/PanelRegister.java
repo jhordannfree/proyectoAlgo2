@@ -33,15 +33,14 @@ public class PanelRegister extends javax.swing.JFrame {
         icon = new javax.swing.JLabel();
         title = new javax.swing.JLabel();
         registrarse = new javax.swing.JLabel();
-        btnEstudiante = new javax.swing.JButton();
-        btnDocente1 = new javax.swing.JButton();
+        btnEstudianteRegistro = new javax.swing.JButton();
+        btnDocenteRegistro = new javax.swing.JButton();
         btnRegresar = new javax.swing.JButton();
         Panelimg = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        jLabelImg = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1650, 953));
-        setPreferredSize(new java.awt.Dimension(1650, 953));
 
         PanelDE.setBackground(new java.awt.Color(255, 255, 255));
         PanelDE.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -58,15 +57,15 @@ public class PanelRegister extends javax.swing.JFrame {
         registrarse.setText("Registrarse como:");
         PanelDE.add(registrarse, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 300, -1, -1));
 
-        btnEstudiante.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/estudiante.png"))); // NOI18N
-        btnEstudiante.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnEstudiante.setFocusable(false);
-        PanelDE.add(btnEstudiante, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 400, 256, 237));
+        btnEstudianteRegistro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/estudiante.png"))); // NOI18N
+        btnEstudianteRegistro.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnEstudianteRegistro.setFocusable(false);
+        PanelDE.add(btnEstudianteRegistro, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 400, 256, 237));
 
-        btnDocente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Docente.png"))); // NOI18N
-        btnDocente1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnDocente1.setFocusable(false);
-        PanelDE.add(btnDocente1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 400, 256, 237));
+        btnDocenteRegistro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Docente.png"))); // NOI18N
+        btnDocenteRegistro.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnDocenteRegistro.setFocusable(false);
+        PanelDE.add(btnDocenteRegistro, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 400, 256, 237));
 
         btnRegresar.setFont(new java.awt.Font("Poppins SemiBold", 0, 20)); // NOI18N
         btnRegresar.setForeground(new java.awt.Color(253, 116, 1));
@@ -75,25 +74,11 @@ public class PanelRegister extends javax.swing.JFrame {
         btnRegresar.setFocusable(false);
         PanelDE.add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 720, 394, 47));
 
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Login_Ilustrator_1.png"))); // NOI18N
+        Panelimg.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout PanelimgLayout = new javax.swing.GroupLayout(Panelimg);
-        Panelimg.setLayout(PanelimgLayout);
-        PanelimgLayout.setHorizontalGroup(
-            PanelimgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PanelimgLayout.createSequentialGroup()
-                .addGap(74, 74, 74)
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 850, Short.MAX_VALUE)
-                .addGap(66, 66, 66))
-        );
-        PanelimgLayout.setVerticalGroup(
-            PanelimgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PanelimgLayout.createSequentialGroup()
-                .addGap(94, 94, 94)
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(79, 79, 79))
-        );
+        jLabelImg.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Login_Ilustrator_1.png"))); // NOI18N
+        Panelimg.add(jLabelImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(74, 94, 850, 780));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -153,11 +138,11 @@ public class PanelRegister extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel PanelDE;
     private javax.swing.JPanel Panelimg;
-    public javax.swing.JButton btnDocente1;
-    public javax.swing.JButton btnEstudiante;
+    public javax.swing.JButton btnDocenteRegistro;
+    public javax.swing.JButton btnEstudianteRegistro;
     public javax.swing.JButton btnRegresar;
     private javax.swing.JLabel icon;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabelImg;
     private javax.swing.JLabel registrarse;
     private javax.swing.JLabel title;
     // End of variables declaration//GEN-END:variables

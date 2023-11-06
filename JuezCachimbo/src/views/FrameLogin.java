@@ -25,47 +25,47 @@ public class FrameLogin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        Background = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        bgLogin = new javax.swing.JPanel();
+        labelNombreApp = new javax.swing.JLabel();
+        jLabelLogo = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        tfCorreo = new javax.swing.JTextField();
+        txtLoginCorreo = new javax.swing.JTextField();
         panelCorreo = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
-        pClave = new javax.swing.JPasswordField();
-        bIniciarSesion = new javax.swing.JButton();
+        txtLoginClave = new javax.swing.JPasswordField();
+        btnLoginIniciarSesion = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
-        bRegistrarse = new javax.swing.JButton();
+        btnLoginRegistrarse = new javax.swing.JButton();
         panelPassword = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        Background.setBackground(new java.awt.Color(255, 255, 255));
-        Background.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        bgLogin.setBackground(new java.awt.Color(255, 255, 255));
+        bgLogin.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Juez_cachimbp.png"))); // NOI18N
-        Background.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(215, 46, 188, 153));
+        labelNombreApp.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelNombreApp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Juez_cachimbp.png"))); // NOI18N
+        bgLogin.add(labelNombreApp, new org.netbeans.lib.awtextra.AbsoluteConstraints(215, 46, 188, 153));
 
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/logo.png"))); // NOI18N
-        Background.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 77, 89, 99));
+        jLabelLogo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/logo.png"))); // NOI18N
+        bgLogin.add(jLabelLogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 77, 89, 99));
 
         jLabel3.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(85, 85, 85));
         jLabel3.setText("Correo electrónico");
-        Background.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 240, -1, -1));
+        bgLogin.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 240, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(85, 85, 85));
         jLabel4.setText("Contraseña");
-        Background.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 370, -1, -1));
+        bgLogin.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 370, -1, -1));
 
-        tfCorreo.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        tfCorreo.setForeground(new java.awt.Color(85, 85, 85));
-        Background.add(tfCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 280, 320, 40));
+        txtLoginCorreo.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        txtLoginCorreo.setForeground(new java.awt.Color(85, 85, 85));
+        bgLogin.add(txtLoginCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 280, 320, 40));
 
         panelCorreo.setBackground(new java.awt.Color(253, 116, 1));
         panelCorreo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -74,32 +74,32 @@ public class FrameLogin extends javax.swing.JFrame {
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/correo 3_1.png"))); // NOI18N
         panelCorreo.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 40, 40));
 
-        Background.add(panelCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 280, 40, 40));
+        bgLogin.add(panelCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 280, 40, 40));
 
-        pClave.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        pClave.setForeground(new java.awt.Color(85, 85, 85));
-        Background.add(pClave, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 410, 320, 40));
+        txtLoginClave.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        txtLoginClave.setForeground(new java.awt.Color(85, 85, 85));
+        bgLogin.add(txtLoginClave, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 410, 320, 40));
 
-        bIniciarSesion.setBackground(new java.awt.Color(253, 116, 1));
-        bIniciarSesion.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
-        bIniciarSesion.setForeground(new java.awt.Color(255, 255, 255));
-        bIniciarSesion.setText("Iniciar sesión");
-        bIniciarSesion.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        bIniciarSesion.setFocusable(false);
-        Background.add(bIniciarSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 530, 360, 40));
-        Background.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 600, 360, 10));
+        btnLoginIniciarSesion.setBackground(new java.awt.Color(253, 116, 1));
+        btnLoginIniciarSesion.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        btnLoginIniciarSesion.setForeground(new java.awt.Color(255, 255, 255));
+        btnLoginIniciarSesion.setText("Iniciar sesión");
+        btnLoginIniciarSesion.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnLoginIniciarSesion.setFocusable(false);
+        bgLogin.add(btnLoginIniciarSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 530, 360, 40));
+        bgLogin.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 600, 360, 10));
 
-        bRegistrarse.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
-        bRegistrarse.setForeground(new java.awt.Color(253, 116, 1));
-        bRegistrarse.setText("Registrarse");
-        bRegistrarse.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        bRegistrarse.setFocusable(false);
-        bRegistrarse.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnLoginRegistrarse.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        btnLoginRegistrarse.setForeground(new java.awt.Color(253, 116, 1));
+        btnLoginRegistrarse.setText("Registrarse");
+        btnLoginRegistrarse.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnLoginRegistrarse.setFocusable(false);
+        btnLoginRegistrarse.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                bRegistrarseMouseEntered(evt);
+                btnLoginRegistrarseMouseEntered(evt);
             }
         });
-        Background.add(bRegistrarse, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 630, 360, 40));
+        bgLogin.add(btnLoginRegistrarse, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 630, 360, 40));
 
         panelPassword.setBackground(new java.awt.Color(253, 116, 1));
         panelPassword.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -108,26 +108,26 @@ public class FrameLogin extends javax.swing.JFrame {
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/candado 3.png"))); // NOI18N
         panelPassword.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 40, 40));
 
-        Background.add(panelPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 410, 40, 40));
+        bgLogin.add(panelPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 410, 40, 40));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Background, javax.swing.GroupLayout.DEFAULT_SIZE, 545, Short.MAX_VALUE)
+            .addComponent(bgLogin, javax.swing.GroupLayout.DEFAULT_SIZE, 545, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Background, javax.swing.GroupLayout.DEFAULT_SIZE, 789, Short.MAX_VALUE)
+            .addComponent(bgLogin, javax.swing.GroupLayout.DEFAULT_SIZE, 789, Short.MAX_VALUE)
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void bRegistrarseMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bRegistrarseMouseEntered
+    private void btnLoginRegistrarseMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLoginRegistrarseMouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_bRegistrarseMouseEntered
+    }//GEN-LAST:event_btnLoginRegistrarseMouseEntered
 
     /**
      * @param args the command line arguments
@@ -168,19 +168,19 @@ public class FrameLogin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel Background;
-    public javax.swing.JButton bIniciarSesion;
-    public javax.swing.JButton bRegistrarse;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JPanel bgLogin;
+    public javax.swing.JButton btnLoginIniciarSesion;
+    public javax.swing.JButton btnLoginRegistrarse;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabelLogo;
     private javax.swing.JSeparator jSeparator1;
-    public javax.swing.JPasswordField pClave;
+    private javax.swing.JLabel labelNombreApp;
     private javax.swing.JPanel panelCorreo;
     private javax.swing.JPanel panelPassword;
-    public javax.swing.JTextField tfCorreo;
+    public javax.swing.JPasswordField txtLoginClave;
+    public javax.swing.JTextField txtLoginCorreo;
     // End of variables declaration//GEN-END:variables
 }

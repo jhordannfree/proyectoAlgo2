@@ -29,107 +29,107 @@ public class EdicionDatosPersonales extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        tfCorreo = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        btnGuardar = new javax.swing.JButton();
-        btnCancelar = new javax.swing.JButton();
-        tfCorreo1 = new javax.swing.JTextField();
-        tfCorreo2 = new javax.swing.JTextField();
-        tfCorreo3 = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
+        jPanelEdicionDatos = new javax.swing.JPanel();
+        labelTituloEdicion = new javax.swing.JLabel();
+        labelNombreED = new javax.swing.JLabel();
+        txtPasswordED = new javax.swing.JTextField();
+        labelApellidosED = new javax.swing.JLabel();
+        labelUsernameED = new javax.swing.JLabel();
+        labelPasswordED = new javax.swing.JLabel();
+        btnGuardarED = new javax.swing.JButton();
+        btnCancelarED = new javax.swing.JButton();
+        txtNombreED = new javax.swing.JTextField();
+        txtApellidosED = new javax.swing.JTextField();
+        txtUsernameED = new javax.swing.JTextField();
+        labelBreadCrumbMDP = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanelEdicionDatos.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelEdicionDatos.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Poppins SemiBold", 0, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(30, 39, 114));
-        jLabel1.setText("Edición de datos personales");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 90, -1, -1));
+        labelTituloEdicion.setFont(new java.awt.Font("Poppins SemiBold", 0, 24)); // NOI18N
+        labelTituloEdicion.setForeground(new java.awt.Color(30, 39, 114));
+        labelTituloEdicion.setText("Edición de datos personales");
+        jPanelEdicionDatos.add(labelTituloEdicion, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 90, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(85, 85, 85));
-        jLabel3.setText("Nombre");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, -1, -1));
+        labelNombreED.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
+        labelNombreED.setForeground(new java.awt.Color(85, 85, 85));
+        labelNombreED.setText("Nombre");
+        jPanelEdicionDatos.add(labelNombreED, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, -1, -1));
 
-        tfCorreo.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        tfCorreo.setForeground(new java.awt.Color(85, 85, 85));
-        jPanel1.add(tfCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 570, 390, 40));
+        txtPasswordED.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        txtPasswordED.setForeground(new java.awt.Color(85, 85, 85));
+        jPanelEdicionDatos.add(txtPasswordED, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 570, 390, 40));
 
-        jLabel4.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(85, 85, 85));
-        jLabel4.setText("Apellidos");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 280, -1, -1));
+        labelApellidosED.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
+        labelApellidosED.setForeground(new java.awt.Color(85, 85, 85));
+        labelApellidosED.setText("Apellidos");
+        jPanelEdicionDatos.add(labelApellidosED, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 280, -1, -1));
 
-        jLabel5.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(85, 85, 85));
-        jLabel5.setText("Nombre de usuario");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 400, -1, -1));
+        labelUsernameED.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
+        labelUsernameED.setForeground(new java.awt.Color(85, 85, 85));
+        labelUsernameED.setText("Nombre de usuario");
+        jPanelEdicionDatos.add(labelUsernameED, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 400, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(85, 85, 85));
-        jLabel6.setText("Contraseña");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 520, -1, -1));
+        labelPasswordED.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
+        labelPasswordED.setForeground(new java.awt.Color(85, 85, 85));
+        labelPasswordED.setText("Contraseña");
+        jPanelEdicionDatos.add(labelPasswordED, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 520, -1, -1));
 
-        btnGuardar.setBackground(new java.awt.Color(253, 116, 1));
-        btnGuardar.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
-        btnGuardar.setForeground(new java.awt.Color(255, 255, 255));
-        btnGuardar.setText("Guardar");
-        btnGuardar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnGuardar.setFocusable(false);
-        btnGuardar.addActionListener(new java.awt.event.ActionListener() {
+        btnGuardarED.setBackground(new java.awt.Color(253, 116, 1));
+        btnGuardarED.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        btnGuardarED.setForeground(new java.awt.Color(255, 255, 255));
+        btnGuardarED.setText("Guardar");
+        btnGuardarED.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnGuardarED.setFocusable(false);
+        btnGuardarED.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnGuardarActionPerformed(evt);
+                btnGuardarEDActionPerformed(evt);
             }
         });
-        jPanel1.add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 690, 180, 40));
+        jPanelEdicionDatos.add(btnGuardarED, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 690, 180, 40));
 
-        btnCancelar.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
-        btnCancelar.setForeground(new java.awt.Color(253, 116, 1));
-        btnCancelar.setText("Cancelar");
-        btnCancelar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnCancelar.setFocusable(false);
-        btnCancelar.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnCancelarED.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        btnCancelarED.setForeground(new java.awt.Color(253, 116, 1));
+        btnCancelarED.setText("Cancelar");
+        btnCancelarED.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnCancelarED.setFocusable(false);
+        btnCancelarED.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnCancelarMouseEntered(evt);
+                btnCancelarEDMouseEntered(evt);
             }
         });
-        jPanel1.add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 690, 160, 40));
+        jPanelEdicionDatos.add(btnCancelarED, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 690, 160, 40));
 
-        tfCorreo1.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        tfCorreo1.setForeground(new java.awt.Color(85, 85, 85));
-        jPanel1.add(tfCorreo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 200, 390, 40));
+        txtNombreED.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        txtNombreED.setForeground(new java.awt.Color(85, 85, 85));
+        jPanelEdicionDatos.add(txtNombreED, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 200, 390, 40));
 
-        tfCorreo2.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        tfCorreo2.setForeground(new java.awt.Color(85, 85, 85));
-        jPanel1.add(tfCorreo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 330, 390, 40));
+        txtApellidosED.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        txtApellidosED.setForeground(new java.awt.Color(85, 85, 85));
+        jPanelEdicionDatos.add(txtApellidosED, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 330, 390, 40));
 
-        tfCorreo3.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        tfCorreo3.setForeground(new java.awt.Color(85, 85, 85));
-        jPanel1.add(tfCorreo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 460, 390, 40));
+        txtUsernameED.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        txtUsernameED.setForeground(new java.awt.Color(85, 85, 85));
+        jPanelEdicionDatos.add(txtUsernameED, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 460, 390, 40));
 
-        jLabel2.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
-        jLabel2.setText("Juez Cachimbo / Perfil / Modificación de datos personales");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
+        labelBreadCrumbMDP.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        labelBreadCrumbMDP.setText("Juez Cachimbo / Perfil / Modificación de datos personales");
+        jPanelEdicionDatos.add(labelBreadCrumbMDP, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 545, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanelEdicionDatos, javax.swing.GroupLayout.PREFERRED_SIZE, 545, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 789, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanelEdicionDatos, javax.swing.GroupLayout.PREFERRED_SIZE, 789, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -137,13 +137,13 @@ public class EdicionDatosPersonales extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnCancelarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCancelarMouseEntered
+    private void btnCancelarEDMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCancelarEDMouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnCancelarMouseEntered
+    }//GEN-LAST:event_btnCancelarEDMouseEntered
 
-    private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
+    private void btnGuardarEDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarEDActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnGuardarActionPerformed
+    }//GEN-LAST:event_btnGuardarEDActionPerformed
 
     /**
      * @param args the command line arguments
@@ -181,18 +181,18 @@ public class EdicionDatosPersonales extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton btnCancelar;
-    public javax.swing.JButton btnGuardar;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JPanel jPanel1;
-    public javax.swing.JTextField tfCorreo;
-    public javax.swing.JTextField tfCorreo1;
-    public javax.swing.JTextField tfCorreo2;
-    public javax.swing.JTextField tfCorreo3;
+    public javax.swing.JButton btnCancelarED;
+    public javax.swing.JButton btnGuardarED;
+    private javax.swing.JPanel jPanelEdicionDatos;
+    private javax.swing.JLabel labelApellidosED;
+    private javax.swing.JLabel labelBreadCrumbMDP;
+    private javax.swing.JLabel labelNombreED;
+    private javax.swing.JLabel labelPasswordED;
+    private javax.swing.JLabel labelTituloEdicion;
+    private javax.swing.JLabel labelUsernameED;
+    public javax.swing.JTextField txtApellidosED;
+    public javax.swing.JTextField txtNombreED;
+    public javax.swing.JTextField txtPasswordED;
+    public javax.swing.JTextField txtUsernameED;
     // End of variables declaration//GEN-END:variables
 }

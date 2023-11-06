@@ -21,25 +21,25 @@ public class PerfilEstudiante extends javax.swing.JPanel {
 
         bgPerfil = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
+        jPanelEstadisticaG1 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jPanel5 = new javax.swing.JPanel();
+        jLabelEGPreguntasCorrectas = new javax.swing.JLabel();
+        jPanelEstadisticaG2 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jPanel6 = new javax.swing.JPanel();
+        jLabelEGPorcentajeTxtCorrectos = new javax.swing.JLabel();
+        jPanelEstadisticaG3 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jPanel7 = new javax.swing.JPanel();
+        jLabelEGPorcentajePreguntasCorrectas = new javax.swing.JLabel();
+        jPanelEstadisticaG4 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
+        jLabelEGTxtLeidos = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        jPanelFotoPerfil = new javax.swing.JPanel();
+        jLabelNombreApellidosEstudianteP = new javax.swing.JLabel();
+        jLabelUsernameEstudianteP = new javax.swing.JLabel();
+        jLabelRankingP = new javax.swing.JLabel();
         btnEditarDatosPersonales = new javax.swing.JButton();
-        jLabel26 = new javax.swing.JLabel();
+        jLabelBCPerfilE = new javax.swing.JLabel();
 
         bgPerfil.setBackground(new java.awt.Color(241, 243, 246));
         bgPerfil.setPreferredSize(new java.awt.Dimension(1260, 850));
@@ -50,97 +50,97 @@ public class PerfilEstudiante extends javax.swing.JPanel {
         jLabel1.setText("Estadísticas generales");
         bgPerfil.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 270, -1, -1));
 
-        jPanel1.setBackground(new java.awt.Color(241, 243, 246));
-        jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(243, 213, 190), new java.awt.Color(243, 213, 190)));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanelEstadisticaG1.setBackground(new java.awt.Color(241, 243, 246));
+        jPanelEstadisticaG1.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(243, 213, 190), new java.awt.Color(243, 213, 190)));
+        jPanelEstadisticaG1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel6.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         jLabel6.setText("Cantidad de preguntas correctas");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, 48));
+        jPanelEstadisticaG1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, 48));
 
-        jLabel12.setFont(new java.awt.Font("Poppins Medium", 1, 18)); // NOI18N
-        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel12.setText("{Cantidad}");
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, -1, 48));
+        jLabelEGPreguntasCorrectas.setFont(new java.awt.Font("Poppins Medium", 1, 18)); // NOI18N
+        jLabelEGPreguntasCorrectas.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelEGPreguntasCorrectas.setText("{Cantidad}");
+        jPanelEstadisticaG1.add(jLabelEGPreguntasCorrectas, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, -1, 48));
 
-        bgPerfil.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 320, 360, 175));
+        bgPerfil.add(jPanelEstadisticaG1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 320, 360, 175));
 
-        jPanel5.setBackground(new java.awt.Color(241, 243, 246));
-        jPanel5.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(243, 213, 190), new java.awt.Color(243, 213, 190)));
-        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanelEstadisticaG2.setBackground(new java.awt.Color(241, 243, 246));
+        jPanelEstadisticaG2.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(243, 213, 190), new java.awt.Color(243, 213, 190)));
+        jPanelEstadisticaG2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel8.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         jLabel8.setText("<html>Porcentaje de textos en los que acerto todas las preguntas</html>");
-        jPanel5.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 320, 48));
+        jPanelEstadisticaG2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 320, 48));
 
-        jLabel14.setFont(new java.awt.Font("Poppins Medium", 1, 18)); // NOI18N
-        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel14.setText("{Porcentaje}");
-        jPanel5.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 100, -1, 48));
+        jLabelEGPorcentajeTxtCorrectos.setFont(new java.awt.Font("Poppins Medium", 1, 18)); // NOI18N
+        jLabelEGPorcentajeTxtCorrectos.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelEGPorcentajeTxtCorrectos.setText("{Porcentaje}");
+        jPanelEstadisticaG2.add(jLabelEGPorcentajeTxtCorrectos, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 100, -1, 48));
 
-        bgPerfil.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 320, 360, 175));
+        bgPerfil.add(jPanelEstadisticaG2, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 320, 360, 175));
 
-        jPanel6.setBackground(new java.awt.Color(241, 243, 246));
-        jPanel6.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(243, 213, 190), new java.awt.Color(243, 213, 190)));
-        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanelEstadisticaG3.setBackground(new java.awt.Color(241, 243, 246));
+        jPanelEstadisticaG3.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(243, 213, 190), new java.awt.Color(243, 213, 190)));
+        jPanelEstadisticaG3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel10.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         jLabel10.setText("<html>Porcentaje de preguntas correctas en total</html>");
-        jPanel6.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 320, 48));
+        jPanelEstadisticaG3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 320, 48));
 
-        jLabel13.setFont(new java.awt.Font("Poppins Medium", 1, 18)); // NOI18N
-        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel13.setText("{Porcentaje}");
-        jPanel6.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, -1, 48));
+        jLabelEGPorcentajePreguntasCorrectas.setFont(new java.awt.Font("Poppins Medium", 1, 18)); // NOI18N
+        jLabelEGPorcentajePreguntasCorrectas.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelEGPorcentajePreguntasCorrectas.setText("{Porcentaje}");
+        jPanelEstadisticaG3.add(jLabelEGPorcentajePreguntasCorrectas, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, -1, 48));
 
-        bgPerfil.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 530, 360, 175));
+        bgPerfil.add(jPanelEstadisticaG3, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 530, 360, 175));
 
-        jPanel7.setBackground(new java.awt.Color(241, 243, 246));
-        jPanel7.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(243, 213, 190), new java.awt.Color(243, 213, 190)));
-        jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanelEstadisticaG4.setBackground(new java.awt.Color(241, 243, 246));
+        jPanelEstadisticaG4.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(243, 213, 190), new java.awt.Color(243, 213, 190)));
+        jPanelEstadisticaG4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel7.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         jLabel7.setText("Cantidad de texto leídos");
-        jPanel7.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, 48));
+        jPanelEstadisticaG4.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, 48));
 
-        jLabel11.setFont(new java.awt.Font("Poppins Medium", 1, 18)); // NOI18N
-        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel11.setText("{Cantidad}");
-        jPanel7.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 80, -1, 48));
+        jLabelEGTxtLeidos.setFont(new java.awt.Font("Poppins Medium", 1, 18)); // NOI18N
+        jLabelEGTxtLeidos.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelEGTxtLeidos.setText("{Cantidad}");
+        jPanelEstadisticaG4.add(jLabelEGTxtLeidos, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 80, -1, 48));
 
-        bgPerfil.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 530, 360, 175));
+        bgPerfil.add(jPanelEstadisticaG4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 530, 360, 175));
 
         jSeparator1.setForeground(new java.awt.Color(243, 213, 190));
         bgPerfil.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 260, 790, 10));
 
-        jPanel2.setBackground(new java.awt.Color(241, 243, 246));
-        jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(243, 213, 190), new java.awt.Color(243, 213, 190)));
+        jPanelFotoPerfil.setBackground(new java.awt.Color(241, 243, 246));
+        jPanelFotoPerfil.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(243, 213, 190), new java.awt.Color(243, 213, 190)));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout jPanelFotoPerfilLayout = new javax.swing.GroupLayout(jPanelFotoPerfil);
+        jPanelFotoPerfil.setLayout(jPanelFotoPerfilLayout);
+        jPanelFotoPerfilLayout.setHorizontalGroup(
+            jPanelFotoPerfilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 96, Short.MAX_VALUE)
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        jPanelFotoPerfilLayout.setVerticalGroup(
+            jPanelFotoPerfilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 96, Short.MAX_VALUE)
         );
 
-        bgPerfil.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 100, 100, 100));
+        bgPerfil.add(jPanelFotoPerfil, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 100, 100, 100));
 
-        jLabel2.setFont(new java.awt.Font("Poppins SemiBold", 0, 20)); // NOI18N
-        jLabel2.setText("{Nombres}, {Apellidos}");
-        bgPerfil.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, 450, -1));
+        jLabelNombreApellidosEstudianteP.setFont(new java.awt.Font("Poppins SemiBold", 0, 20)); // NOI18N
+        jLabelNombreApellidosEstudianteP.setText("{Nombres}, {Apellidos}");
+        bgPerfil.add(jLabelNombreApellidosEstudianteP, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, 450, -1));
 
-        jLabel3.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        jLabel3.setText("{Username}");
-        bgPerfil.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 160, 340, -1));
+        jLabelUsernameEstudianteP.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        jLabelUsernameEstudianteP.setText("{Username}");
+        bgPerfil.add(jLabelUsernameEstudianteP, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 160, 340, -1));
 
-        jLabel4.setFont(new java.awt.Font("Poppins Medium", 0, 14)); // NOI18N
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("{Ranking}");
-        bgPerfil.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 210, 100, -1));
+        jLabelRankingP.setFont(new java.awt.Font("Poppins Medium", 0, 14)); // NOI18N
+        jLabelRankingP.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelRankingP.setText("{Ranking}");
+        bgPerfil.add(jLabelRankingP, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 210, 100, -1));
 
         btnEditarDatosPersonales.setBackground(new java.awt.Color(253, 116, 1));
         btnEditarDatosPersonales.setFont(new java.awt.Font("Poppins SemiBold", 0, 20)); // NOI18N
@@ -149,9 +149,9 @@ public class PerfilEstudiante extends javax.swing.JPanel {
         btnEditarDatosPersonales.setFocusable(false);
         bgPerfil.add(btnEditarDatosPersonales, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 740, 350, 50));
 
-        jLabel26.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
-        jLabel26.setText("Juez Cachimbo / Perfil");
-        bgPerfil.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
+        jLabelBCPerfilE.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
+        jLabelBCPerfilE.setText("Juez Cachimbo / Perfil");
+        bgPerfil.add(jLabelBCPerfilE, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -171,22 +171,22 @@ public class PerfilEstudiante extends javax.swing.JPanel {
     private javax.swing.JButton btnEditarDatosPersonales;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
+    private javax.swing.JLabel jLabelBCPerfilE;
+    private javax.swing.JLabel jLabelEGPorcentajePreguntasCorrectas;
+    private javax.swing.JLabel jLabelEGPorcentajeTxtCorrectos;
+    private javax.swing.JLabel jLabelEGPreguntasCorrectas;
+    private javax.swing.JLabel jLabelEGTxtLeidos;
+    private javax.swing.JLabel jLabelNombreApellidosEstudianteP;
+    private javax.swing.JLabel jLabelRankingP;
+    private javax.swing.JLabel jLabelUsernameEstudianteP;
+    private javax.swing.JPanel jPanelEstadisticaG1;
+    private javax.swing.JPanel jPanelEstadisticaG2;
+    private javax.swing.JPanel jPanelEstadisticaG3;
+    private javax.swing.JPanel jPanelEstadisticaG4;
+    private javax.swing.JPanel jPanelFotoPerfil;
     private javax.swing.JSeparator jSeparator1;
     // End of variables declaration//GEN-END:variables
 }
