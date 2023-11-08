@@ -27,7 +27,7 @@ public class PanelDocente extends javax.swing.JFrame {
     
     //Metodo que permite mostrar un panel en relación a uno de los botones del menú
     public void showJPanel(JPanel p){
-        p.setSize(1260, 850); //El nuevo panel tendra la misma dimension del contenedor principal
+        p.setSize(1260, 953); //El nuevo panel tendra la misma dimension del contenedor principal
         p.setLocation(0, 0); //El nuevo panel se colocara en la posicion (0, 0)
         
         contenedorPrincipalD.removeAll();
@@ -59,9 +59,6 @@ public class PanelDocente extends javax.swing.JFrame {
         jLabelDocente = new javax.swing.JLabel();
         title = new javax.swing.JLabel();
         icon = new javax.swing.JLabel();
-        jPanelBusquedaDocente = new javax.swing.JPanel();
-        txtBusquedaDocente = new javax.swing.JTextField();
-        jLabelLogoBusqueda = new javax.swing.JLabel();
         contenedorPrincipalD = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -131,19 +128,6 @@ public class PanelDocente extends javax.swing.JFrame {
 
         getContentPane().add(jPanelOpcionesDocente, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 953));
 
-        jPanelBusquedaDocente.setBackground(new java.awt.Color(241, 243, 246));
-        jPanelBusquedaDocente.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        txtBusquedaDocente.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
-        txtBusquedaDocente.setForeground(new java.awt.Color(85, 85, 85));
-        jPanelBusquedaDocente.add(txtBusquedaDocente, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 30, 419, 32));
-
-        jLabelLogoBusqueda.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelLogoBusqueda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/search 1.png"))); // NOI18N
-        jPanelBusquedaDocente.add(jLabelLogoBusqueda, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 30, 30, 30));
-
-        getContentPane().add(jPanelBusquedaDocente, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 0, 1260, 90));
-
         contenedorPrincipalD.setBackground(new java.awt.Color(241, 243, 246));
 
         javax.swing.GroupLayout contenedorPrincipalDLayout = new javax.swing.GroupLayout(contenedorPrincipalD);
@@ -154,10 +138,10 @@ public class PanelDocente extends javax.swing.JFrame {
         );
         contenedorPrincipalDLayout.setVerticalGroup(
             contenedorPrincipalDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 850, Short.MAX_VALUE)
+            .addGap(0, 953, Short.MAX_VALUE)
         );
 
-        getContentPane().add(contenedorPrincipalD, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 93, 1260, 850));
+        getContentPane().add(contenedorPrincipalD, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 0, 1260, 953));
 
         pack();
         setLocationRelativeTo(null);
@@ -208,10 +192,8 @@ public class PanelDocente extends javax.swing.JFrame {
     private javax.swing.JLabel jLabelDocente;
     public javax.swing.JLabel jLabelEstadisticaGenerales;
     public javax.swing.JLabel jLabelInicio;
-    private javax.swing.JLabel jLabelLogoBusqueda;
     public javax.swing.JLabel jLabelPerfil;
     public javax.swing.JLabel jLabelSeguimiento;
-    private javax.swing.JPanel jPanelBusquedaDocente;
     public javax.swing.JPanel jPanelCerrarSesionD;
     public javax.swing.JPanel jPanelEstadisticasGeneralesD;
     public javax.swing.JPanel jPanelInicioD;
@@ -219,6 +201,5 @@ public class PanelDocente extends javax.swing.JFrame {
     public javax.swing.JPanel jPanelPerfilD;
     public javax.swing.JPanel jPanelSeguimientoD;
     private javax.swing.JLabel title;
-    private javax.swing.JTextField txtBusquedaDocente;
     // End of variables declaration//GEN-END:variables
 }

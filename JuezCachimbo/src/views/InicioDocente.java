@@ -29,6 +29,7 @@ public class InicioDocente extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         jScrollPaneRanking = new javax.swing.JScrollPane();
         jTableRanking = new javax.swing.JTable();
+        jLabelBreadCrumbsInicioD = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -39,7 +40,7 @@ public class InicioDocente extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Poppins SemiBold", 0, 20)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(253, 116, 1));
         jLabel1.setText("Ranking de estudiantes");
-        bgInicioDocente.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, -1, -1));
+        bgInicioDocente.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, -1, -1));
 
         jScrollPaneRanking.setBackground(new java.awt.Color(255, 255, 255));
         jScrollPaneRanking.setFocusable(false);
@@ -74,15 +75,20 @@ public class InicioDocente extends javax.swing.JPanel {
         jTableRanking.setShowVerticalLines(true);
         jScrollPaneRanking.setViewportView(jTableRanking);
 
-        bgInicioDocente.add(jScrollPaneRanking, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, 1140, 660));
+        bgInicioDocente.add(jScrollPaneRanking, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, 1140, 710));
 
-        add(bgInicioDocente, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1274, -1));
+        jLabelBreadCrumbsInicioD.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
+        jLabelBreadCrumbsInicioD.setText("Juez Cachimbo / Inicio");
+        bgInicioDocente.add(jLabelBreadCrumbsInicioD, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
+
+        add(bgInicioDocente, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1260, 953));
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel bgInicioDocente;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabelBreadCrumbsInicioD;
     private javax.swing.JScrollPane jScrollPaneRanking;
     private javax.swing.JTable jTableRanking;
     // End of variables declaration//GEN-END:variables

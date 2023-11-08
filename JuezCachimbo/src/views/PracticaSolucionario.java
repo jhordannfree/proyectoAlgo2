@@ -70,7 +70,6 @@ public class PracticaSolucionario extends javax.swing.JFrame {
         jScrollPaneRazonamiento3 = new javax.swing.JScrollPane();
         jTextAreaRazonamiento3 = new javax.swing.JTextArea();
         jLabelRespuesta3 = new javax.swing.JLabel();
-        btnSalirSolucionario = new javax.swing.JButton();
         btnVerReporte = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -244,31 +243,17 @@ public class PracticaSolucionario extends javax.swing.JFrame {
 
         jPanelBgSolucionario.add(jScrollPaneSolucionario, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 70, 1020, 760));
 
-        btnSalirSolucionario.setFont(new java.awt.Font("Poppins SemiBold", 0, 18)); // NOI18N
-        btnSalirSolucionario.setForeground(new java.awt.Color(253, 116, 1));
-        btnSalirSolucionario.setText("Salir");
-        btnSalirSolucionario.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSalirSolucionarioActionPerformed(evt);
-            }
-        });
-        jPanelBgSolucionario.add(btnSalirSolucionario, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 860, 140, 40));
-
         btnVerReporte.setBackground(new java.awt.Color(253, 116, 1));
         btnVerReporte.setFont(new java.awt.Font("Poppins SemiBold", 0, 18)); // NOI18N
         btnVerReporte.setForeground(new java.awt.Color(255, 255, 255));
-        btnVerReporte.setText("Ver reporte");
-        jPanelBgSolucionario.add(btnVerReporte, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 855, 140, 40));
+        btnVerReporte.setText("Finalizar");
+        jPanelBgSolucionario.add(btnVerReporte, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 870, 170, 40));
 
         getContentPane().add(jPanelBgSolucionario, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1160, 950));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnSalirSolucionarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirSolucionarioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnSalirSolucionarioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -306,7 +291,6 @@ public class PracticaSolucionario extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnSalirSolucionario;
     private javax.swing.JButton btnVerReporte;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
