@@ -10,12 +10,12 @@ import com.formdev.flatlaf.FlatLightLaf;
  *
  * @author Usuario
  */
-public class EdicionDatosPersonales extends javax.swing.JFrame {
+public class EdicionDatosDocente extends javax.swing.JFrame {
 
     /**
      * Creates new form EdicionDatosPersonales
      */
-    public EdicionDatosPersonales() {
+    public EdicionDatosDocente() {
         initComponents();
         setResizable(false);
     }
@@ -32,17 +32,19 @@ public class EdicionDatosPersonales extends javax.swing.JFrame {
         jPanelEdicionDatos = new javax.swing.JPanel();
         labelTituloEdicion = new javax.swing.JLabel();
         labelNombreED = new javax.swing.JLabel();
-        txtPasswordEdicionEstudiante = new javax.swing.JTextField();
+        txtPasswordEdicionDocente = new javax.swing.JTextField();
         labelApellidosED = new javax.swing.JLabel();
         labelUsernameED = new javax.swing.JLabel();
         labelPasswordED = new javax.swing.JLabel();
-        btnGuardarEdicionEstudiante = new javax.swing.JButton();
-        btnCancelarEdicionEstudiante = new javax.swing.JButton();
+        btnGuardarEdicionDocente = new javax.swing.JButton();
+        btnCancelarEdicionDocente = new javax.swing.JButton();
         txtNombreEdicionEstudiante = new javax.swing.JTextField();
-        txtApellidosEdicionEstudiante = new javax.swing.JTextField();
-        txtUsernameEdicionEstudiante = new javax.swing.JTextField();
+        txtApellidosEdicionDocente = new javax.swing.JTextField();
+        txtUsernameEdicionDocente = new javax.swing.JTextField();
         labelBreadCrumbMDP = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        txtCarreraProfesionalEdicionDocente = new javax.swing.JTextField();
+        labelApellidosED1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -52,76 +54,85 @@ public class EdicionDatosPersonales extends javax.swing.JFrame {
         labelTituloEdicion.setFont(new java.awt.Font("Poppins SemiBold", 0, 24)); // NOI18N
         labelTituloEdicion.setForeground(new java.awt.Color(30, 39, 114));
         labelTituloEdicion.setText("Edición de datos personales");
-        jPanelEdicionDatos.add(labelTituloEdicion, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 90, -1, -1));
+        jPanelEdicionDatos.add(labelTituloEdicion, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 80, -1, -1));
 
         labelNombreED.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
         labelNombreED.setForeground(new java.awt.Color(85, 85, 85));
         labelNombreED.setText("Nombre");
-        jPanelEdicionDatos.add(labelNombreED, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 190, -1, -1));
+        jPanelEdicionDatos.add(labelNombreED, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 170, -1, -1));
 
-        txtPasswordEdicionEstudiante.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        txtPasswordEdicionEstudiante.setForeground(new java.awt.Color(85, 85, 85));
-        jPanelEdicionDatos.add(txtPasswordEdicionEstudiante, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 600, 390, 40));
+        txtPasswordEdicionDocente.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        txtPasswordEdicionDocente.setForeground(new java.awt.Color(85, 85, 85));
+        jPanelEdicionDatos.add(txtPasswordEdicionDocente, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 610, 390, 40));
 
         labelApellidosED.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
         labelApellidosED.setForeground(new java.awt.Color(85, 85, 85));
         labelApellidosED.setText("Apellidos");
-        jPanelEdicionDatos.add(labelApellidosED, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 310, -1, -1));
+        jPanelEdicionDatos.add(labelApellidosED, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 270, -1, -1));
 
         labelUsernameED.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
         labelUsernameED.setForeground(new java.awt.Color(85, 85, 85));
         labelUsernameED.setText("Nombre de usuario");
-        jPanelEdicionDatos.add(labelUsernameED, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 430, -1, -1));
+        jPanelEdicionDatos.add(labelUsernameED, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 470, -1, -1));
 
         labelPasswordED.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
         labelPasswordED.setForeground(new java.awt.Color(85, 85, 85));
         labelPasswordED.setText("Contraseña");
-        jPanelEdicionDatos.add(labelPasswordED, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 550, -1, -1));
+        jPanelEdicionDatos.add(labelPasswordED, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 570, -1, -1));
 
-        btnGuardarEdicionEstudiante.setBackground(new java.awt.Color(253, 116, 1));
-        btnGuardarEdicionEstudiante.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
-        btnGuardarEdicionEstudiante.setForeground(new java.awt.Color(255, 255, 255));
-        btnGuardarEdicionEstudiante.setText("Guardar");
-        btnGuardarEdicionEstudiante.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnGuardarEdicionEstudiante.setFocusable(false);
-        btnGuardarEdicionEstudiante.addActionListener(new java.awt.event.ActionListener() {
+        btnGuardarEdicionDocente.setBackground(new java.awt.Color(253, 116, 1));
+        btnGuardarEdicionDocente.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        btnGuardarEdicionDocente.setForeground(new java.awt.Color(255, 255, 255));
+        btnGuardarEdicionDocente.setText("Guardar");
+        btnGuardarEdicionDocente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnGuardarEdicionDocente.setFocusable(false);
+        btnGuardarEdicionDocente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnGuardarEdicionEstudianteActionPerformed(evt);
+                btnGuardarEdicionDocenteActionPerformed(evt);
             }
         });
-        jPanelEdicionDatos.add(btnGuardarEdicionEstudiante, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 700, 180, 40));
+        jPanelEdicionDatos.add(btnGuardarEdicionDocente, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 700, 180, 40));
 
-        btnCancelarEdicionEstudiante.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
-        btnCancelarEdicionEstudiante.setForeground(new java.awt.Color(253, 116, 1));
-        btnCancelarEdicionEstudiante.setText("Cancelar");
-        btnCancelarEdicionEstudiante.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnCancelarEdicionEstudiante.setFocusable(false);
-        btnCancelarEdicionEstudiante.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnCancelarEdicionDocente.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        btnCancelarEdicionDocente.setForeground(new java.awt.Color(253, 116, 1));
+        btnCancelarEdicionDocente.setText("Cancelar");
+        btnCancelarEdicionDocente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnCancelarEdicionDocente.setFocusable(false);
+        btnCancelarEdicionDocente.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnCancelarEdicionEstudianteMouseEntered(evt);
+                btnCancelarEdicionDocenteMouseEntered(evt);
             }
         });
-        jPanelEdicionDatos.add(btnCancelarEdicionEstudiante, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 700, 160, 40));
+        jPanelEdicionDatos.add(btnCancelarEdicionDocente, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 700, 160, 40));
 
         txtNombreEdicionEstudiante.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
         txtNombreEdicionEstudiante.setForeground(new java.awt.Color(85, 85, 85));
-        jPanelEdicionDatos.add(txtNombreEdicionEstudiante, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 230, 390, 40));
+        jPanelEdicionDatos.add(txtNombreEdicionEstudiante, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 210, 390, 40));
 
-        txtApellidosEdicionEstudiante.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        txtApellidosEdicionEstudiante.setForeground(new java.awt.Color(85, 85, 85));
-        jPanelEdicionDatos.add(txtApellidosEdicionEstudiante, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 360, 390, 40));
+        txtApellidosEdicionDocente.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        txtApellidosEdicionDocente.setForeground(new java.awt.Color(85, 85, 85));
+        jPanelEdicionDatos.add(txtApellidosEdicionDocente, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 310, 390, 40));
 
-        txtUsernameEdicionEstudiante.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
-        txtUsernameEdicionEstudiante.setForeground(new java.awt.Color(85, 85, 85));
-        jPanelEdicionDatos.add(txtUsernameEdicionEstudiante, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 490, 390, 40));
+        txtUsernameEdicionDocente.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        txtUsernameEdicionDocente.setForeground(new java.awt.Color(85, 85, 85));
+        jPanelEdicionDatos.add(txtUsernameEdicionDocente, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 510, 390, 40));
 
         labelBreadCrumbMDP.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         labelBreadCrumbMDP.setText("Juez Cachimbo / Perfil / Modificación de datos personales");
         jPanelEdicionDatos.add(labelBreadCrumbMDP, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Poppins SemiBold", 0, 16)); // NOI18N
-        jLabel1.setText("Estudiante");
-        jPanelEdicionDatos.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 150, -1, -1));
+        jLabel1.setText("Docente");
+        jPanelEdicionDatos.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 130, -1, -1));
+
+        txtCarreraProfesionalEdicionDocente.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
+        txtCarreraProfesionalEdicionDocente.setForeground(new java.awt.Color(85, 85, 85));
+        jPanelEdicionDatos.add(txtCarreraProfesionalEdicionDocente, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 410, 390, 40));
+
+        labelApellidosED1.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
+        labelApellidosED1.setForeground(new java.awt.Color(85, 85, 85));
+        labelApellidosED1.setText("Carrera profesional");
+        jPanelEdicionDatos.add(labelApellidosED1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 370, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -142,13 +153,13 @@ public class EdicionDatosPersonales extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnCancelarEdicionEstudianteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCancelarEdicionEstudianteMouseEntered
+    private void btnCancelarEdicionDocenteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCancelarEdicionDocenteMouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnCancelarEdicionEstudianteMouseEntered
+    }//GEN-LAST:event_btnCancelarEdicionDocenteMouseEntered
 
-    private void btnGuardarEdicionEstudianteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarEdicionEstudianteActionPerformed
+    private void btnGuardarEdicionDocenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarEdicionDocenteActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnGuardarEdicionEstudianteActionPerformed
+    }//GEN-LAST:event_btnGuardarEdicionDocenteActionPerformed
 
     /**
      * @param args the command line arguments
@@ -167,38 +178,40 @@ public class EdicionDatosPersonales extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(EdicionDatosPersonales.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EdicionDatosDocente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(EdicionDatosPersonales.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EdicionDatosDocente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(EdicionDatosPersonales.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EdicionDatosDocente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(EdicionDatosPersonales.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EdicionDatosDocente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         FlatLightLaf.setup();
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new EdicionDatosPersonales().setVisible(true);
+                new EdicionDatosDocente().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton btnCancelarEdicionEstudiante;
-    public javax.swing.JButton btnGuardarEdicionEstudiante;
+    public javax.swing.JButton btnCancelarEdicionDocente;
+    public javax.swing.JButton btnGuardarEdicionDocente;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanelEdicionDatos;
     private javax.swing.JLabel labelApellidosED;
+    private javax.swing.JLabel labelApellidosED1;
     private javax.swing.JLabel labelBreadCrumbMDP;
     private javax.swing.JLabel labelNombreED;
     private javax.swing.JLabel labelPasswordED;
     private javax.swing.JLabel labelTituloEdicion;
     private javax.swing.JLabel labelUsernameED;
-    public javax.swing.JTextField txtApellidosEdicionEstudiante;
+    public javax.swing.JTextField txtApellidosEdicionDocente;
+    public javax.swing.JTextField txtCarreraProfesionalEdicionDocente;
     public javax.swing.JTextField txtNombreEdicionEstudiante;
-    public javax.swing.JTextField txtPasswordEdicionEstudiante;
-    public javax.swing.JTextField txtUsernameEdicionEstudiante;
+    public javax.swing.JTextField txtPasswordEdicionDocente;
+    public javax.swing.JTextField txtUsernameEdicionDocente;
     // End of variables declaration//GEN-END:variables
 }
