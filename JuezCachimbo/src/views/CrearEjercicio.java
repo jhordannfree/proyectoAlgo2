@@ -68,10 +68,10 @@ public class CrearEjercicio extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel bgCrearGrupo;
-    private javax.swing.JButton btnCancelar;
-    private javax.swing.JButton btnCrearGrupo;
+    public javax.swing.JButton btnCancelar;
+    public javax.swing.JButton btnCrearGrupo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabelBreadCrumbsCrearGrupo;
-    private javax.swing.JPanel jPanelContenedorCrearEjercicio;
+    public javax.swing.JPanel jPanelContenedorCrearEjercicio;
     // End of variables declaration//GEN-END:variables
 }
