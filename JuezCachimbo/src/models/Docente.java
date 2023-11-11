@@ -8,8 +8,8 @@ import java.time.LocalDate;
 public class Docente extends Usuario{
     private String carrera;
 
-    public Docente(String carrera, String name, String username, String password, LocalDate fechaNacimiento) {
-        super(name, fechaNacimiento,username, password);
+    public Docente(String carrera, String nombres,String apellidos, String username, String password, LocalDate fechaNacimiento) {
+        super(nombres,apellidos, fechaNacimiento,username, password);
         this.carrera = carrera;
     }
 

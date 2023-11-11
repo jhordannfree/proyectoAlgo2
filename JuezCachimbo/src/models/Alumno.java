@@ -15,8 +15,8 @@ public class Alumno extends Usuario {
 
    
 
-     public Alumno(String name, String username, String password, LocalDate fechaNacimiento){
-        super(name,fechaNacimiento,username,password);
+     public Alumno(String nombres,String apellidos, String username, LocalDate fechaNacimiento,String password){
+        super(nombres,apellidos,fechaNacimiento,username,password);
         preguntasCorrectas=0;
         preguntasCorrectasXTexto=0;
         textosLeidos=0;
@@ -24,8 +24,8 @@ public class Alumno extends Usuario {
         textosCompletamenteFallados=0;
     }
     
-    public Alumno(int textosLeidos, double preguntasCorrectas, double preguntasCorrectasXTexto, double textosCompletamenteFallados, double textosCompletamenteAcertados,String name, String username, String password, LocalDate fechaNacimiento) {
-        super(name, fechaNacimiento, username, password);
+    public Alumno(int textosLeidos, double preguntasCorrectas, double preguntasCorrectasXTexto, double textosCompletamenteFallados, double textosCompletamenteAcertados,String nombres,String apellidos, String username, String password, LocalDate fechaNacimiento) {
+        super(nombres,apellidos, fechaNacimiento, username, password);
         this.textosLeidos=textosLeidos;
         this.preguntasCorrectas=preguntasCorrectas;
         this.preguntasCorrectasXTexto=preguntasCorrectasXTexto;

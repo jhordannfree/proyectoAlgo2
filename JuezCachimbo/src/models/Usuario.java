@@ -9,35 +9,23 @@ public abstract class Usuario {
     private static int nUsuarios =0;
     
     private String id;
-    private String name;
+    private String nombres;
+    private String apellidos;
     private LocalDate fechaNacimiento;
     private String username;
     private String password;
 
-    public Usuario(String name, LocalDate fechaNacimiento, String username, String password) {
+    public Usuario(String nombres, String apellidos, LocalDate fechaNacimiento, String username, String password) {
         nUsuarios++;
         
         this.id=String.valueOf(nUsuarios);
         this.fechaNacimiento=fechaNacimiento;
-        this.name = name;
+        this.nombres = nombres;
+        this.apellidos = apellidos;
         this.username = username;
         this.password = password;
     }
-
-    /**
-     * @return the name
-     */
-    public String getName() {
-        return name;
-    }
-
-    /**
-     * @param name the name to set
-     */
-    public void setName(String name) {
-        this.name = name;
-    }
-
+    
     /**
      * @return the username
      */
@@ -82,5 +70,33 @@ public abstract class Usuario {
      */
     public void setFechaNacimiento(LocalDate fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
+    }
+
+    /**
+     * @return the nombres
+     */
+    public String getNombres() {
+        return nombres;
+    }
+
+    /**
+     * @param nombres the nombres to set
+     */
+    public void setNombres(String nombres) {
+        this.nombres = nombres;
+    }
+
+    /**
+     * @return the apellidos
+     */
+    public String getApellidos() {
+        return apellidos;
+    }
+
+    /**
+     * @param apellidos the apellidos to set
+     */
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
     }
 }
