@@ -6,12 +6,18 @@ import java.time.LocalDate;
  * @author Pumapillo
  */
 public abstract class Usuario {
+    private static int nUsuarios =0;
+    
+    private String id;
     private String name;
     private LocalDate fechaNacimiento;
     private String username;
     private String password;
 
     public Usuario(String name, LocalDate fechaNacimiento, String username, String password) {
+        nUsuarios++;
+        
+        this.id=String.valueOf(nUsuarios);
         this.fechaNacimiento=fechaNacimiento;
         this.name = name;
         this.username = username;
