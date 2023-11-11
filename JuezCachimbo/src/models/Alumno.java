@@ -15,8 +15,8 @@ public class Alumno extends Usuario {
 
    
 
-     public Alumno(String nombres,String apellidos, String username, LocalDate fechaNacimiento,String password){
-        super(nombres,apellidos,fechaNacimiento,username,password);
+     public Alumno(String id,String nombres,String apellidos, String username, LocalDate fechaNacimiento,String password){
+        super(id,nombres,apellidos,fechaNacimiento,username,password);
         preguntasCorrectas=0;
         preguntasCorrectasXTexto=0;
         textosLeidos=0;
@@ -24,8 +24,8 @@ public class Alumno extends Usuario {
         textosCompletamenteFallados=0;
     }
     
-    public Alumno(int textosLeidos, double preguntasCorrectas, double preguntasCorrectasXTexto, double textosCompletamenteFallados, double textosCompletamenteAcertados,String nombres,String apellidos, String username, String password, LocalDate fechaNacimiento) {
-        super(nombres,apellidos, fechaNacimiento, username, password);
+    public Alumno(String id, int textosLeidos, double preguntasCorrectas, double preguntasCorrectasXTexto, double textosCompletamenteFallados, double textosCompletamenteAcertados,String nombres,String apellidos, String username, String password, LocalDate fechaNacimiento) {
+        super(id, nombres,apellidos, fechaNacimiento, username, password);
         this.textosLeidos=textosLeidos;
         this.preguntasCorrectas=preguntasCorrectas;
         this.preguntasCorrectasXTexto=preguntasCorrectasXTexto;
@@ -102,6 +102,20 @@ public class Alumno extends Usuario {
     @Override
     public void logout() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    /**
+     * @return the textosLeidos
+     */
+    public int getTextosLeidos() {
+        return textosLeidos;
+    }
+
+    /**
+     * @param textosLeidos the textosLeidos to set
+     */
+    public void setTextosLeidos(int textosLeidos) {
+        this.textosLeidos = textosLeidos;
     }
     
 }

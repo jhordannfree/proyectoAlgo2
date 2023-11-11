@@ -6,19 +6,16 @@ import java.time.LocalDate;
  * @author Pumapillo
  */
 public abstract class Usuario {
-    private static int nUsuarios =0;
-    
     private String id;
+    private String username;
+    private String password;
     private String nombres;
     private String apellidos;
     private LocalDate fechaNacimiento;
-    private String username;
-    private String password;
 
-    public Usuario(String nombres, String apellidos, LocalDate fechaNacimiento, String username, String password) {
-        nUsuarios++;
-        
-        this.id=String.valueOf(nUsuarios);
+    public Usuario(String id,String nombres, String apellidos, LocalDate fechaNacimiento, String username, String password) {
+
+        this.id=id;
         this.fechaNacimiento=fechaNacimiento;
         this.nombres = nombres;
         this.apellidos = apellidos;
@@ -98,5 +95,19 @@ public abstract class Usuario {
      */
     public void setApellidos(String apellidos) {
         this.apellidos = apellidos;
+    }
+
+    /**
+     * @return the id
+     */
+    public String getId() {
+        return id;
+    }
+
+    /**
+     * @param id the id to set
+     */
+    public void setId(String id) {
+        this.id = id;
     }
 }
