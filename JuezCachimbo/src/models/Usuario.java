@@ -1,5 +1,5 @@
 
-package juezcachimbo;
+package models;
 
 /**
  *

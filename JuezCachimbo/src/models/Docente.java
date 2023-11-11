@@ -1,18 +1,16 @@
 
-package juezcachimbo;
+package models;
 
 /**
  *
  * @author Pumapillo
  */
-public class Alumno extends Usuario {
-    private int ranking;
-    private int dificultad;
+public class Docente extends Usuario{
+    private String carrera;
 
-    public Alumno(int ranking, int dificultad, String name, String username, String email, String password) {
+    public Docente(String carrera, String name, String username, String email, String password) {
         super(name, username, email, password);
-        this.ranking = ranking;
-        this.dificultad = dificultad;
+        this.carrera = carrera;
     }
 
     @Override
@@ -31,31 +29,17 @@ public class Alumno extends Usuario {
     }
 
     /**
-     * @return the ranking
+     * @return the carrera
      */
-    public int getRanking() {
-        return ranking;
+    public String getCarrera() {
+        return carrera;
     }
 
     /**
-     * @param ranking the ranking to set
+     * @param carrera the carrera to set
      */
-    public void setRanking(int ranking) {
-        this.ranking = ranking;
-    }
-
-    /**
-     * @return the dificultad
-     */
-    public int getDificultad() {
-        return dificultad;
-    }
-
-    /**
-     * @param dificultad the dificultad to set
-     */
-    public void setDificultad(int dificultad) {
-        this.dificultad = dificultad;
+    public void setCarrera(String carrera) {
+        this.carrera = carrera;
     }
     
 }
