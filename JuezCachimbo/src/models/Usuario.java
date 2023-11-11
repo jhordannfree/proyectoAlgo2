@@ -1,20 +1,20 @@
 
 package models;
-
+import java.time.LocalDate;
 /**
  *
  * @author Pumapillo
  */
 public abstract class Usuario {
     private String name;
+    private LocalDate fechaNacimiento;
     private String username;
-    private String email;
     private String password;
 
-    public Usuario(String name, String username, String email, String password) {
+    public Usuario(String name, LocalDate fechaNacimiento, String username, String password) {
+        this.fechaNacimiento=fechaNacimiento;
         this.name = name;
         this.username = username;
-        this.email = email;
         this.password = password;
     }
 
@@ -47,20 +47,6 @@ public abstract class Usuario {
     }
 
     /**
-     * @return the email
-     */
-    public String getEmail() {
-        return email;
-    }
-
-    /**
-     * @param email the email to set
-     */
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    /**
      * @return the password
      */
     public String getPassword() {
@@ -77,4 +63,18 @@ public abstract class Usuario {
     public abstract void register();
     public abstract void login();
     public abstract void logout();
+
+    /**
+     * @return the fechaNacimiento
+     */
+    public LocalDate getFechaNacimiento() {
+        return fechaNacimiento;
+    }
+
+    /**
+     * @param fechaNacimiento the fechaNacimiento to set
+     */
+    public void setFechaNacimiento(LocalDate fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
+    }
 }

@@ -1,18 +1,28 @@
 
 package models;
-
+import java.time.LocalDate;
 /**
  *
  * @author Pumapillo
  */
 public class Alumno extends Usuario {
-    private int ranking;
-    private int dificultad;
+    private int textosLeidos;
+    private double preguntasCorrectas;
+    private double preguntasCorrectasXTexto;
+    private double textosCompletamenteFallados;
+    private double textosCompletamenteAcertados;
 
-    public Alumno(int ranking, int dificultad, String name, String username, String email, String password) {
-        super(name, username, email, password);
-        this.ranking = ranking;
-        this.dificultad = dificultad;
+    public Alumno(String name, String username, String password, LocalDate fechaNacimiento){
+        super(name,fechaNacimiento,username,password);
+    }
+    
+    public Alumno(int textosLeidos, double preguntasCorrectas, double preguntasCorrectasXTexto, double textosCompletamenteFallados, double textosCompletamenteAcertados,String name, String username, String password, LocalDate fechaNacimiento) {
+        super(name, fechaNacimiento, username, password);
+        this.textosLeidos=textosLeidos;
+        this.preguntasCorrectas=preguntasCorrectas;
+        this.preguntasCorrectasXTexto=preguntasCorrectasXTexto;
+        this.textosCompletamenteFallados=textosCompletamenteFallados;
+        this.textosCompletamenteAcertados=textosCompletamenteAcertados;
     }
 
     @Override
@@ -28,34 +38,6 @@ public class Alumno extends Usuario {
     @Override
     public void logout() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    /**
-     * @return the ranking
-     */
-    public int getRanking() {
-        return ranking;
-    }
-
-    /**
-     * @param ranking the ranking to set
-     */
-    public void setRanking(int ranking) {
-        this.ranking = ranking;
-    }
-
-    /**
-     * @return the dificultad
-     */
-    public int getDificultad() {
-        return dificultad;
-    }
-
-    /**
-     * @param dificultad the dificultad to set
-     */
-    public void setDificultad(int dificultad) {
-        this.dificultad = dificultad;
     }
     
 }
