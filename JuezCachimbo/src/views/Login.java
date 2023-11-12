@@ -2,6 +2,8 @@
 package views;
 
 import com.formdev.flatlaf.FlatLightLaf;
+import controllers.LoginControllers;
+import models.Usuario;
 
 /**
  *
@@ -9,11 +11,15 @@ import com.formdev.flatlaf.FlatLightLaf;
  */
 
 public class Login extends javax.swing.JFrame {
-
+    
+    Usuario usuario;
+    
     public Login() {
         initComponents();
         setTitle("Juez Cachimbo");
         setResizable(false);
+        LoginControllers loginControllers=new LoginControllers(this,usuario);
+        
     }
 
     /**
@@ -94,11 +100,6 @@ public class Login extends javax.swing.JFrame {
         btnLoginRegistrarse.setText("Registrarse");
         btnLoginRegistrarse.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnLoginRegistrarse.setFocusable(false);
-        btnLoginRegistrarse.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnLoginRegistrarseMouseEntered(evt);
-            }
-        });
         bgLogin.add(btnLoginRegistrarse, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 630, 360, 40));
 
         panelPassword.setBackground(new java.awt.Color(253, 116, 1));
@@ -124,10 +125,6 @@ public class Login extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnLoginRegistrarseMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLoginRegistrarseMouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnLoginRegistrarseMouseEntered
 
     /**
      * @param args the command line arguments

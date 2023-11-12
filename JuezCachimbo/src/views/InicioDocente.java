@@ -13,7 +13,7 @@ public class InicioDocente extends javax.swing.JPanel {
 
     public InicioDocente() {
         initComponents();
-        FlatLightLaf.setup(); //Modifica el diseño de los componentes de las interfaces graficas
+        FlatLightLaf.setup();
     }
 
     /**

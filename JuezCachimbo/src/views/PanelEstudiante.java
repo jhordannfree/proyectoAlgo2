@@ -145,7 +145,18 @@ public class PanelEstudiante extends javax.swing.JFrame {
 
         contenedorPrincipalE.setBackground(new java.awt.Color(241, 243, 246));
         contenedorPrincipalE.setPreferredSize(new java.awt.Dimension(1260, 850));
-        contenedorPrincipalE.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        javax.swing.GroupLayout contenedorPrincipalELayout = new javax.swing.GroupLayout(contenedorPrincipalE);
+        contenedorPrincipalE.setLayout(contenedorPrincipalELayout);
+        contenedorPrincipalELayout.setHorizontalGroup(
+            contenedorPrincipalELayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1260, Short.MAX_VALUE)
+        );
+        contenedorPrincipalELayout.setVerticalGroup(
+            contenedorPrincipalELayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 850, Short.MAX_VALUE)
+        );
+
         getContentPane().add(contenedorPrincipalE, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 93, 1260, 850));
 
         pack();

@@ -80,10 +80,10 @@ public class InicioEstudiante extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel bgInicioEstudiante;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabelBreadCrumbsInicioD;
-    private javax.swing.JScrollPane jScrollPaneTxtRecomendados;
-    private javax.swing.JTable jTableTextosRecomendados;
+    public javax.swing.JPanel bgInicioEstudiante;
+    public javax.swing.JLabel jLabel1;
+    public javax.swing.JLabel jLabelBreadCrumbsInicioD;
+    public javax.swing.JScrollPane jScrollPaneTxtRecomendados;
+    public javax.swing.JTable jTableTextosRecomendados;
     // End of variables declaration//GEN-END:variables
 }
