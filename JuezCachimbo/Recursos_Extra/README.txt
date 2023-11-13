@@ -1,0 +1,1 @@
+Recursos que se utilizaran durante la construcción del programa.
