@@ -2,22 +2,18 @@
 package views;
 
 import com.formdev.flatlaf.FlatLightLaf;
+import controllers.RegisterEstudiante2Controller;
 
-
-/**
- *
- * @author Vilberto Patricio
- */
 
 public class RegisterEstudiante2 extends javax.swing.JFrame {
 
-    /**
-     * Creates new form PanelRegister
-     */
+    RegisterEstudiante2Controller registerEstudiante2Controller;
+            
     public RegisterEstudiante2() {
         initComponents();
         setTitle("Juez Cachimbo");
         setResizable(false);
+        registerEstudiante2Controller= new RegisterEstudiante2Controller(this);
     }
 
     /**
@@ -94,7 +90,6 @@ public class RegisterEstudiante2 extends javax.swing.JFrame {
 
         jComboBoxGrupoE.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
         jComboBoxGrupoE.setForeground(new java.awt.Color(85, 85, 85));
-        jComboBoxGrupoE.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Grupo 01", "Grupo 02", "Grupo 03", "Grupo 04" }));
         PanelDE.add(jComboBoxGrupoE, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 600, 140, 40));
 
         Panelimg.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -176,7 +171,7 @@ public class RegisterEstudiante2 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel PanelDE;
     private javax.swing.JPanel Panelimg;
-    private javax.swing.JButton btnRegistrarseE;
+    public javax.swing.JButton btnRegistrarseE;
     private javax.swing.JLabel icon;
     public javax.swing.JComboBox<String> jComboBoxGrupoE;
     private javax.swing.JLabel jLabelEstudiante;
@@ -185,7 +180,7 @@ public class RegisterEstudiante2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabelPasswordRD1;
     private javax.swing.JLabel jLabelUsernameRegisterD;
     private javax.swing.JLabel title;
-    private javax.swing.JTextField txtClaveRegisterE;
-    private javax.swing.JTextField txtUsernameRegisterE;
+    public javax.swing.JTextField txtClaveRegisterE;
+    public javax.swing.JTextField txtUsernameRegisterE;
     // End of variables declaration//GEN-END:variables
 }

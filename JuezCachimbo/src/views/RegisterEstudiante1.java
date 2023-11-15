@@ -1,23 +1,18 @@
-
 package views;
 
 import com.formdev.flatlaf.FlatLightLaf;
+import controllers.RegisterEstudiante1Controller;
 
-
-/**
- *
- * @author Vilberto Patricio
- */
 
 public class RegisterEstudiante1 extends javax.swing.JFrame {
 
-    /**
-     * Creates new form PanelRegister
-     */
+    RegisterEstudiante1Controller registerEstudiante1Controller;
+            
     public RegisterEstudiante1() {
         initComponents();
         setTitle("Juez Cachimbo");
         setResizable(false);
+        registerEstudiante1Controller= new RegisterEstudiante1Controller(this);
     }
 
     /**
@@ -82,7 +77,7 @@ public class RegisterEstudiante1 extends javax.swing.JFrame {
 
         jLabelNombreRD.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
         jLabelNombreRD.setForeground(new java.awt.Color(85, 85, 85));
-        jLabelNombreRD.setText("Nombre");
+        jLabelNombreRD.setText("Nombres");
         PanelDE.add(jLabelNombreRD, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 270, -1, -1));
 
         jLabelFechaRD.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
