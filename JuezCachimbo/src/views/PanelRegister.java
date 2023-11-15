@@ -2,22 +2,18 @@
 package views;
 
 import com.formdev.flatlaf.FlatLightLaf;
+import controllers.RegisterController;
 
-
-/**
- *
- * @author Vilberto Patricio
- */
 
 public class PanelRegister extends javax.swing.JFrame {
-
-    /**
-     * Creates new form PanelRegister
-     */
+    
+    RegisterController registerController;
+    
     public PanelRegister() {
         initComponents();
         setTitle("Juez Cachimbo");
         setResizable(false);
+        registerController=new RegisterController(this);
     }
 
     /**

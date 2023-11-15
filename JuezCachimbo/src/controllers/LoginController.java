@@ -1,5 +1,3 @@
-
-
 package controllers;
 
 import java.awt.event.ActionEvent;
@@ -14,18 +12,23 @@ import javax.swing.JOptionPane;
 import views.Login;
 import views.PanelEstudiante;
 import views.PanelDocente;
+import views.InicioEstudiante;
+import views.InicioDocente;
+
+import views.PanelRegister;
+
 import models.Alumno;
 import models.Docente;
 import models.Usuario;
 
-public class LoginControllers implements ActionListener {
+public class LoginController implements ActionListener {
     Login viewLogin;
     Usuario usuario;
     
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 
     
-    public LoginControllers(Login viewLogin, Usuario usuario){
+    public LoginController(Login viewLogin, Usuario usuario){
         this.usuario=usuario;
         this.viewLogin=viewLogin;
         this.viewLogin.btnLoginIniciarSesion.addActionListener(this);
@@ -34,7 +37,7 @@ public class LoginControllers implements ActionListener {
     
     @Override
     public void actionPerformed(ActionEvent e){
-        if(e.getSource()==viewLogin.btnLoginIniciarSesion){ //Código botón "Iniciar Sesión"
+        if(e.getSource()==viewLogin.btnLoginIniciarSesion){ //Botón "Iniciar Sesión"
             
             boolean esUsuario=false;
             String fileLine = "";  
@@ -49,10 +52,12 @@ public class LoginControllers implements ActionListener {
 
                     if(viewLogin.txtLoginCorreo.getText().equals(alumno[1])&&new String(viewLogin.txtLoginClave.getPassword()).equals(alumno[2])){
                         esUsuario=true;
-                        this.usuario=new Alumno(alumno[0],alumno[1],alumno[2],alumno[3],alumno[4],LocalDate.parse(alumno[5],formatter),Integer.parseInt(alumno[6]),Double.parseDouble(alumno[7]),Double.parseDouble(alumno[8]),Double.parseDouble(alumno[9]),Double.parseDouble(alumno[10])) ;
+                        this.usuario=new Alumno(alumno[0],alumno[1],alumno[2],alumno[3],alumno[4],LocalDate.parse(alumno[5],formatter),alumno[6],Integer.parseInt(alumno[7]),Double.parseDouble(alumno[8]),Double.parseDouble(alumno[9]),Double.parseDouble(alumno[10]),Double.parseDouble(alumno[11])) ;
                         
      
                         PanelEstudiante viewEstudiante=new PanelEstudiante();
+                        InicioEstudiante inicioEstudiante=new InicioEstudiante();
+                        viewEstudiante.contenedorPrincipalE.add(inicioEstudiante);
                         viewEstudiante.setVisible(true);
                         this.viewLogin.dispose();
                         
@@ -73,6 +78,8 @@ public class LoginControllers implements ActionListener {
                             this.usuario=new Docente(docente[0],docente[1],docente[2],docente[3],docente[4],LocalDate.parse(docente[5],formatter),docente[6]) ;
                             
                             PanelDocente viewDocente=new PanelDocente();
+                            InicioDocente inicioDocente=new InicioDocente();
+                            viewDocente.contenedorPrincipalD.add(inicioDocente);
                             viewDocente.setVisible(true);
                             this.viewLogin.dispose();
                             
@@ -95,7 +102,11 @@ public class LoginControllers implements ActionListener {
             }   
         }
         
-        else{ //Código botón "Registrarse"
+        else if (e.getSource()==viewLogin.btnLoginRegistrarse){ //Botón "Registrarse"
+            
+            PanelRegister viewRegister=new PanelRegister();
+            viewRegister.setVisible(true);
+            this.viewLogin.dispose();
             
         }
 

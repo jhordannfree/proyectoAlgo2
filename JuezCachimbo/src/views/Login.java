@@ -2,23 +2,20 @@
 package views;
 
 import com.formdev.flatlaf.FlatLightLaf;
-import controllers.LoginControllers;
+import controllers.LoginController;
 import models.Usuario;
-
-/**
- *
- * @author Vilberto Patricio
- */
 
 public class Login extends javax.swing.JFrame {
     
     Usuario usuario;
-    
+    LoginController loginController;
+
     public Login() {
         initComponents();
         setTitle("Juez Cachimbo");
         setResizable(false);
-        LoginControllers loginControllers=new LoginControllers(this,usuario);
+        loginController=new LoginController(this,usuario);
+        
         
     }
 
@@ -61,7 +58,7 @@ public class Login extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(85, 85, 85));
-        jLabel3.setText("Correo electrónico");
+        jLabel3.setText("Usuario");
         bgLogin.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 240, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Poppins", 0, 20)); // NOI18N

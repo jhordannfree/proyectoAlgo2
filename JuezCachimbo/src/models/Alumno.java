@@ -7,6 +7,7 @@ import java.time.LocalDate;
  */
 public class Alumno extends Usuario {
     
+    private String idGrupo;
     private int textosLeidos;
     private double preguntasCorrectas;
     private double preguntasCorrectasXTexto;
@@ -17,6 +18,7 @@ public class Alumno extends Usuario {
 
      public Alumno(String id, String username,String password,String nombres,String apellidos, LocalDate fechaNacimiento){
         super(id,nombres,apellidos,fechaNacimiento,username,password);
+        idGrupo="-";
         preguntasCorrectas=0;
         preguntasCorrectasXTexto=0;
         textosLeidos=0;
@@ -24,8 +26,9 @@ public class Alumno extends Usuario {
         textosCompletamenteFallados=0;
     }
     
-    public Alumno(String id,String username,String password,String nombres,String apellidos, LocalDate fechaNacimiento, int textosLeidos, double preguntasCorrectas, double preguntasCorrectasXTexto, double textosCompletamenteFallados, double textosCompletamenteAcertados) {
+    public Alumno(String id,String username,String password,String nombres,String apellidos, LocalDate fechaNacimiento, String idGrupo,int textosLeidos, double preguntasCorrectas, double preguntasCorrectasXTexto, double textosCompletamenteFallados, double textosCompletamenteAcertados) {
         super(id, nombres,apellidos, fechaNacimiento, username, password);
+        this.idGrupo=idGrupo;
         this.textosLeidos=textosLeidos;
         this.preguntasCorrectas=preguntasCorrectas;
         this.preguntasCorrectasXTexto=preguntasCorrectasXTexto;
