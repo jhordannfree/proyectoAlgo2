@@ -9,7 +9,7 @@ public class Alumno extends Usuario {
     
     private String idGrupo;
     private int textosLeidos;
-    private double preguntasCorrectas;
+    private int preguntasRespondidas;
     private double preguntasCorrectasXTexto;
     private double textosCompletamenteFallados;
     private double textosCompletamenteAcertados;
@@ -19,18 +19,18 @@ public class Alumno extends Usuario {
      public Alumno(String id, String username,String password,String nombres,String apellidos, LocalDate fechaNacimiento,String idGrupo){
         super(id,nombres,apellidos,fechaNacimiento,username,password);
         this.idGrupo=idGrupo;
-        preguntasCorrectas=0;
+        preguntasRespondidas=0;
         preguntasCorrectasXTexto=0;
         textosLeidos=0;
         textosCompletamenteAcertados=0;
         textosCompletamenteFallados=0;
     }
     
-    public Alumno(String id,String username,String password,String nombres,String apellidos, LocalDate fechaNacimiento, String idGrupo,int textosLeidos, double preguntasCorrectas, double preguntasCorrectasXTexto, double textosCompletamenteFallados, double textosCompletamenteAcertados) {
+    public Alumno(String id,String username,String password,String nombres,String apellidos, LocalDate fechaNacimiento, String idGrupo,int textosLeidos, int preguntasRespondidas, double preguntasCorrectasXTexto, double textosCompletamenteFallados, double textosCompletamenteAcertados) {
         super(id, nombres,apellidos, fechaNacimiento, username, password);
         this.idGrupo=idGrupo;
         this.textosLeidos=textosLeidos;
-        this.preguntasCorrectas=preguntasCorrectas;
+        this.preguntasRespondidas=preguntasRespondidas;
         this.preguntasCorrectasXTexto=preguntasCorrectasXTexto;
         this.textosCompletamenteFallados=textosCompletamenteFallados;
         this.textosCompletamenteAcertados=textosCompletamenteAcertados;
@@ -39,15 +39,12 @@ public class Alumno extends Usuario {
     /**
      * @return the preguntasCorrectas
      */
-    public double getPreguntasCorrectas() {
-        return preguntasCorrectas;
+    public int getPreguntasRespondidas() {
+        return preguntasRespondidas;
     }
 
-    /**
-     * @param preguntasCorrectas the preguntasCorrectas to set
-     */
-    public void setPreguntasCorrectas(double preguntasCorrectas) {
-        this.preguntasCorrectas = preguntasCorrectas;
+    public void setPreguntasRespondidas(int preguntasRespondidas) {
+        this.preguntasRespondidas = preguntasRespondidas;
     }
 
     /**

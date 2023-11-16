@@ -179,7 +179,7 @@ public class EstadisticasEstudiante extends javax.swing.JPanel {
         jLabel11.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(253, 116, 1));
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel11.setText("<html><p align=\"center\">Porcentaje de textos que el estudiante falló todas las preguntas.</p></html>");
+        jLabel11.setText("<html><p align=\"center\">Porcentaje de textos en los que el estudiante falló todas las preguntas.</p></html>");
         jLabel11.setAutoscrolls(true);
         jLabel11.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jPanelRanking.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, 190, 90));
@@ -187,7 +187,7 @@ public class EstadisticasEstudiante extends javax.swing.JPanel {
         jLabel14.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(253, 116, 1));
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel14.setText("<html><p align=\"center\">Porcentaje de textos en lo que el estudiante marco la resupuesta correcta e incorrecta.</p></html>");
+        jLabel14.setText("<html><p align=\"center\">Porcentaje de textos en los que el estudiante marcó resupuestas correctas e incorrectas.</p></html>");
         jLabel14.setAutoscrolls(true);
         jLabel14.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jPanelRanking.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 90, 270, 90));

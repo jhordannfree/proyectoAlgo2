@@ -16,7 +16,6 @@ import views.RegisterEstudiante2;
 
 public class RegisterEstudiante2Controller implements ActionListener{
     RegisterEstudiante2 viewRegisterEstudiante2;
-    Usuario usuario;
     
     public RegisterEstudiante2Controller(RegisterEstudiante2 viewRegisterEstudiante2){
         this.viewRegisterEstudiante2=viewRegisterEstudiante2;
@@ -34,11 +33,13 @@ public class RegisterEstudiante2Controller implements ActionListener{
             }
             else{
                 JOptionPane.showMessageDialog(viewRegisterEstudiante2, "Alumno registrado con éxito.");
-                usuario=ManejadorCSV.registrarAlumno(viewRegisterEstudiante2.txtUsernameRegisterE.getText(), viewRegisterEstudiante2.txtClaveRegisterE.getText(), viewRegisterEstudiante2.getNombres(), viewRegisterEstudiante2.getApellidos(), viewRegisterEstudiante2.getFechaNacimiento(), ManejadorCSV.obtenerCodigoGrupo(viewRegisterEstudiante2.jComboBoxGrupoE.getSelectedItem().toString()));
+                Usuario usuario=ManejadorCSV.registrarAlumno(viewRegisterEstudiante2.txtUsernameRegisterE.getText(), viewRegisterEstudiante2.txtClaveRegisterE.getText(), viewRegisterEstudiante2.getNombres(), viewRegisterEstudiante2.getApellidos(), viewRegisterEstudiante2.getFechaNacimiento(), ManejadorCSV.obtenerCodigoGrupo(viewRegisterEstudiante2.jComboBoxGrupoE.getSelectedItem().toString()));
                 
                 PanelEstudiante viewEstudiante=new PanelEstudiante();
                 InicioEstudiante inicioEstudiante=new InicioEstudiante();
                 viewEstudiante.contenedorPrincipalE.add(inicioEstudiante);
+                viewEstudiante.setUsuario(usuario);
+               
                 viewEstudiante.setVisible(true);
                 this.viewRegisterEstudiante2.dispose();
             }

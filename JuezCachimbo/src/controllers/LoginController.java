@@ -1,12 +1,8 @@
 package controllers;
 
+import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.BufferedReader;  
-import java.io.FileReader;  
-import java.io.IOException;  
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import javax.swing.JOptionPane;
 
 import views.Login;
@@ -17,8 +13,6 @@ import views.InicioDocente;
 
 import views.PanelRegister;
 
-import models.Alumno;
-import models.Docente;
 import models.ManejadorCSV;
 import models.Usuario;
 
@@ -44,10 +38,13 @@ public class LoginController implements ActionListener {
 
             //Verificar si es alumno
             if(null!=ManejadorCSV.encontrarAlumno(viewLogin.txtLoginCorreo.getText(), new String(viewLogin.txtLoginClave.getPassword()))){
+                
                 this.usuario=ManejadorCSV.encontrarAlumno(viewLogin.txtLoginCorreo.getText(), new String(viewLogin.txtLoginClave.getPassword()));
 
                 PanelEstudiante viewEstudiante=new PanelEstudiante();
                 InicioEstudiante inicioEstudiante=new InicioEstudiante();
+                viewEstudiante.setUsuario(usuario);
+                viewEstudiante.setEstudianteLabel();
                 viewEstudiante.contenedorPrincipalE.add(inicioEstudiante);
                 viewEstudiante.setVisible(true);
                 this.viewLogin.dispose();
@@ -59,9 +56,11 @@ public class LoginController implements ActionListener {
             else if(null!=ManejadorCSV.encontrarDocente(viewLogin.txtLoginCorreo.getText(), new String(viewLogin.txtLoginClave.getPassword()))){
 
                 this.usuario=ManejadorCSV.encontrarDocente(viewLogin.txtLoginCorreo.getText(), new String(viewLogin.txtLoginClave.getPassword())) ;
-
+                
                 PanelDocente viewDocente=new PanelDocente();
                 InicioDocente inicioDocente=new InicioDocente();
+                viewDocente.setUsuario(usuario);
+                viewDocente.setDocenteLabel();
                 viewDocente.contenedorPrincipalD.add(inicioDocente);
                 viewDocente.setVisible(true);
                 this.viewLogin.dispose();

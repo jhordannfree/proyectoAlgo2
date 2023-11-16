@@ -4,20 +4,25 @@ package views;
 import com.formdev.flatlaf.FlatLightLaf; //Es una libreria de Java que permite darle un diseño mas moderno a las interfaces. Esta libreria esta en la web.
 import java.awt.BorderLayout;
 import javax.swing.JPanel;
+import models.Usuario;
+import controllers.PanelDocenteController;
 
-
-/**
- *
- * @author Vilberto Patricio
- */
 
 public class PanelDocente extends javax.swing.JFrame {
 
+    PanelDocenteController panelDocenteController;
+    public Usuario usuario;
+    
     public PanelDocente() {
         initComponents();
         setTitle("Juez Cachimbo");
         setResizable(false); //La aplicacion no sera responsiva
         InitContent();
+        panelDocenteController=new PanelDocenteController(this);
+    }
+    
+    public void setDocenteLabel(){
+        jLabelDocente.setText(usuario.getApellidos()+" ,"+usuario.getNombres());
     }
     
     //Metodo para iniciar un contenedor
@@ -116,7 +121,7 @@ public class PanelDocente extends javax.swing.JFrame {
         jLabelDocente.setFont(new java.awt.Font("Poppins SemiBold", 1, 18)); // NOI18N
         jLabelDocente.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelDocente.setText("Docente");
-        jPanelOpcionesDocente.add(jLabelDocente, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, 130, 30));
+        jPanelOpcionesDocente.add(jLabelDocente, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 370, 30));
 
         title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         title.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Juez_cachimbp.png"))); // NOI18N
@@ -202,4 +207,18 @@ public class PanelDocente extends javax.swing.JFrame {
     public javax.swing.JPanel jPanelSeguimientoD;
     private javax.swing.JLabel title;
     // End of variables declaration//GEN-END:variables
+
+    /**
+     * @return the usuario
+     */
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    /**
+     * @param usuario the usuario to set
+     */
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
 }

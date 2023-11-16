@@ -460,7 +460,7 @@
                   <Color blue="1" green="74" red="fd" type="rgb"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
-                <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;p align=&quot;center&quot;&gt;Porcentaje de textos que el estudiante fall&#xf3; todas las preguntas.&lt;/p&gt;&lt;/html&gt;"/>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;p align=&quot;center&quot;&gt;Porcentaje de textos en los que el estudiante fall&#xf3; todas las preguntas.&lt;/p&gt;&lt;/html&gt;"/>
                 <Property name="autoscrolls" type="boolean" value="true"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -479,7 +479,7 @@
                   <Color blue="1" green="74" red="fd" type="rgb"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
-                <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;p align=&quot;center&quot;&gt;Porcentaje de textos en lo que el estudiante marco la resupuesta correcta e incorrecta.&lt;/p&gt;&lt;/html&gt;"/>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;p align=&quot;center&quot;&gt;Porcentaje de textos en los que el estudiante marc&#xf3; resupuestas correctas e incorrectas.&lt;/p&gt;&lt;/html&gt;"/>
                 <Property name="autoscrolls" type="boolean" value="true"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>

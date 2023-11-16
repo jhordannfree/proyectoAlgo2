@@ -2,23 +2,30 @@
 package views;
 
 import com.formdev.flatlaf.FlatLightLaf; //Es una libreria de Java que permite darle un diseño mas moderno a las interfaces. Esta libreria esta en la web.
+import controllers.PanelEstudianteController;
 import java.awt.BorderLayout;
 import javax.swing.JPanel;
+import models.Usuario;
 
-
-/**
- *
- * @author Vilberto Patricio
- */
 
 public class PanelEstudiante extends javax.swing.JFrame {
-
+    
+    PanelEstudianteController panelEstudianteController;
+    Usuario usuario;
+    
+    
     public PanelEstudiante() {
         initComponents();
         setTitle("Juez Cachimbo");
         setResizable(false); //La aplicacion no sera responsiva
         InitContent();
+        panelEstudianteController=new PanelEstudianteController(this);
     }
+    
+    public void setEstudianteLabel(){
+        jLabelEstudiante.setText(usuario.getApellidos()+" ,"+usuario.getNombres());
+    }
+    
     
     //Metodo para iniciar un contenedor
     public void InitContent(){
@@ -35,6 +42,7 @@ public class PanelEstudiante extends javax.swing.JFrame {
         contenedorPrincipalE.revalidate();
         contenedorPrincipalE.repaint();
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -61,7 +69,7 @@ public class PanelEstudiante extends javax.swing.JFrame {
         icon = new javax.swing.JLabel();
         jPanelBusquedaEstudiante = new javax.swing.JPanel();
         jTextField1 = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
+        jLabelBuscar = new javax.swing.JLabel();
         contenedorPrincipalE = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -117,8 +125,9 @@ public class PanelEstudiante extends javax.swing.JFrame {
         jPanelOpcionesEstudiante.add(jPanelEstadisticaE, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 430, 390, 62));
 
         jLabelEstudiante.setFont(new java.awt.Font("Poppins SemiBold", 1, 18)); // NOI18N
+        jLabelEstudiante.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelEstudiante.setText("Estudiante");
-        jPanelOpcionesEstudiante.add(jLabelEstudiante, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 140, -1, -1));
+        jPanelOpcionesEstudiante.add(jLabelEstudiante, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 370, -1));
 
         title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         title.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Juez_cachimbp.png"))); // NOI18N
@@ -137,9 +146,9 @@ public class PanelEstudiante extends javax.swing.JFrame {
         jTextField1.setForeground(new java.awt.Color(85, 85, 85));
         jPanelBusquedaEstudiante.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 30, 419, 32));
 
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/search 1.png"))); // NOI18N
-        jPanelBusquedaEstudiante.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 30, 30, 30));
+        jLabelBuscar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/search 1.png"))); // NOI18N
+        jPanelBusquedaEstudiante.add(jLabelBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 30, 30, 30));
 
         getContentPane().add(jPanelBusquedaEstudiante, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 0, 1260, 90));
 
@@ -204,10 +213,10 @@ public class PanelEstudiante extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JPanel contenedorPrincipalE;
     private javax.swing.JLabel icon;
-    private javax.swing.JLabel jLabel1;
+    public javax.swing.JLabel jLabelBuscar;
     public javax.swing.JLabel jLabelCerrarSesion;
     public javax.swing.JLabel jLabelEstadistica;
-    private javax.swing.JLabel jLabelEstudiante;
+    public javax.swing.JLabel jLabelEstudiante;
     public javax.swing.JLabel jLabelInicio;
     public javax.swing.JLabel jLabelPerfil;
     public javax.swing.JLabel jLabelPracticar;
@@ -221,4 +230,18 @@ public class PanelEstudiante extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel title;
     // End of variables declaration//GEN-END:variables
+
+    /**
+     * @return the usuario
+     */
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    /**
+     * @param usuario the usuario to set
+     */
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
 }

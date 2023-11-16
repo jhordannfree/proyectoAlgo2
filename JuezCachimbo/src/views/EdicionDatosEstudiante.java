@@ -10,12 +10,12 @@ import com.formdev.flatlaf.FlatLightLaf;
  *
  * @author Usuario
  */
-public class EdicionDatosPersonales extends javax.swing.JFrame {
+public class EdicionDatosEstudiante extends javax.swing.JFrame {
 
     /**
      * Creates new form EdicionDatosPersonales
      */
-    public EdicionDatosPersonales() {
+    public EdicionDatosEstudiante() {
         initComponents();
         setResizable(false);
     }
@@ -167,20 +167,20 @@ public class EdicionDatosPersonales extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(EdicionDatosPersonales.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EdicionDatosEstudiante.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(EdicionDatosPersonales.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EdicionDatosEstudiante.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(EdicionDatosPersonales.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EdicionDatosEstudiante.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(EdicionDatosPersonales.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EdicionDatosEstudiante.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         FlatLightLaf.setup();
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new EdicionDatosPersonales().setVisible(true);
+                new EdicionDatosEstudiante().setVisible(true);
             }
         });
     }

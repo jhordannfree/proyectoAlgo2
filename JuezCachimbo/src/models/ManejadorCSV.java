@@ -24,7 +24,7 @@ public class ManejadorCSV {
                 String[] alumno = fileLine.split(",");
                 
                 if(usuarioIngresado.equals(alumno[1])&&contraseñaIngresada.equals(alumno[2])){
-                    alumnoEncontrado=new Alumno(alumno[0],alumno[1],alumno[2],alumno[3],alumno[4],LocalDate.parse(alumno[5],formatter),alumno[6],Integer.parseInt(alumno[7]),Double.parseDouble(alumno[8]),Double.parseDouble(alumno[9]),Double.parseDouble(alumno[10]),Double.parseDouble(alumno[11])) ;
+                    alumnoEncontrado=new Alumno(alumno[0],alumno[1],alumno[2],alumno[3],alumno[4],LocalDate.parse(alumno[5],formatter),alumno[6],Integer.parseInt(alumno[7]),Integer.parseInt(alumno[8]),Double.parseDouble(alumno[9]),Double.parseDouble(alumno[10]),Double.parseDouble(alumno[11])) ;
                     return alumnoEncontrado;
                 }
             }  
