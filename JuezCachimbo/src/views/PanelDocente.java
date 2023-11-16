@@ -22,7 +22,7 @@ public class PanelDocente extends javax.swing.JFrame {
     }
     
     public void setDocenteLabel(){
-        jLabelDocente.setText(usuario.getApellidos()+" ,"+usuario.getNombres());
+        jLabelDocente.setText(usuario.getApellidos()+", "+usuario.getNombres());
     }
     
     //Metodo para iniciar un contenedor
