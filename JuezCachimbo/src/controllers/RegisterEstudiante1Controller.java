@@ -29,7 +29,12 @@ public class RegisterEstudiante1Controller implements ActionListener{
             }
             else{
                 if(Integer.parseInt(dia)>0&&Integer.parseInt(mes)>0&&Integer.parseInt(año)>=1900&&Integer.parseInt(dia)>0&&31>=Integer.parseInt(dia)&&12>=Integer.parseInt(mes)&&2023>=Integer.parseInt(año)){
+                   
                     RegisterEstudiante2 viewRegisterDocente2=new RegisterEstudiante2();
+                    viewRegisterDocente2.setNombres(nombres);
+                    viewRegisterDocente2.setApellidos(apellidos);
+                    viewRegisterDocente2.setFechaNacimiento(dia+"-"+mes+"-"+año);
+                    
                     viewRegisterDocente2.setVisible(true);
                     this.viewRegisterEstudiante1.dispose();
                 }

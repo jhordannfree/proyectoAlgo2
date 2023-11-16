@@ -8,6 +8,9 @@ import controllers.RegisterEstudiante2Controller;
 public class RegisterEstudiante2 extends javax.swing.JFrame {
 
     RegisterEstudiante2Controller registerEstudiante2Controller;
+    private String nombres;
+    private String apellidos;
+    private String fechaNacimiento;
             
     public RegisterEstudiante2() {
         initComponents();
@@ -90,7 +93,7 @@ public class RegisterEstudiante2 extends javax.swing.JFrame {
 
         jComboBoxGrupoE.setFont(new java.awt.Font("Poppins", 0, 18)); // NOI18N
         jComboBoxGrupoE.setForeground(new java.awt.Color(85, 85, 85));
-        PanelDE.add(jComboBoxGrupoE, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 600, 140, 40));
+        PanelDE.add(jComboBoxGrupoE, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 600, 250, 40));
 
         Panelimg.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -183,4 +186,46 @@ public class RegisterEstudiante2 extends javax.swing.JFrame {
     public javax.swing.JTextField txtClaveRegisterE;
     public javax.swing.JTextField txtUsernameRegisterE;
     // End of variables declaration//GEN-END:variables
+
+    /**
+     * @return the nombres
+     */
+    public String getNombres() {
+        return nombres;
+    }
+
+    /**
+     * @param nombres the nombres to set
+     */
+    public void setNombres(String nombres) {
+        this.nombres = nombres;
+    }
+
+    /**
+     * @return the apellidos
+     */
+    public String getApellidos() {
+        return apellidos;
+    }
+
+    /**
+     * @param apellidos the apellidos to set
+     */
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
+    }
+
+    /**
+     * @return the fechaNacimiento
+     */
+    public String getFechaNacimiento() {
+        return fechaNacimiento;
+    }
+
+    /**
+     * @param fechaNacimiento the fechaNacimiento to set
+     */
+    public void setFechaNacimiento(String fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
+    }
 }

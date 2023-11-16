@@ -16,9 +16,9 @@ public class Alumno extends Usuario {
 
    
 
-     public Alumno(String id, String username,String password,String nombres,String apellidos, LocalDate fechaNacimiento){
+     public Alumno(String id, String username,String password,String nombres,String apellidos, LocalDate fechaNacimiento,String idGrupo){
         super(id,nombres,apellidos,fechaNacimiento,username,password);
-        idGrupo="-";
+        this.idGrupo=idGrupo;
         preguntasCorrectas=0;
         preguntasCorrectasXTexto=0;
         textosLeidos=0;

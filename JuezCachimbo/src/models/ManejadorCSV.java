@@ -1,7 +1,9 @@
 package models;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -83,6 +85,83 @@ public class ManejadorCSV {
         {  
             exception.printStackTrace();  
         } 
+        
+        return null;
+    }
+    
+    public static boolean esUsuarioNuevo(String usuarioIngresado){
+        try
+        {
+           String fileLine = ""; 
+           BufferedReader readerAlumnos = new BufferedReader(new FileReader("src\\csv\\alumnos.csv")); 
+           BufferedReader readerDocentes = new BufferedReader(new FileReader("src\\csv\\docentes.csv")); 
+           
+           while ((fileLine = readerAlumnos.readLine()) != null){
+               String[] alumno = fileLine.split(",");
+               if(alumno[1].equals(usuarioIngresado)){
+                   return false;
+               }
+           }
+           
+           while ((fileLine = readerDocentes.readLine()) != null){
+               String[] docente = fileLine.split(",");
+               if(docente[1].equals(usuarioIngresado)){
+                   return false;
+               }
+           }
+           
+           return true;
+        }
+        catch (IOException exception)   
+        {  
+            exception.printStackTrace();  
+        } 
+        
+        return true;
+    }
+    
+    public static String obtenerCodigoGrupo(String nombreGrupo){
+        try
+        {
+            String fileLine = ""; 
+            BufferedReader readerGrupos = new BufferedReader(new FileReader("src\\csv\\grupos.csv"));
+            System.out.println("Group Name: " + nombreGrupo);
+            while ((fileLine = readerGrupos.readLine()) != null){
+               String[] grupo = fileLine.split(",");
+               if(grupo[1].equals(nombreGrupo)){
+                   return grupo[0];
+               }
+           }
+        }
+        catch (IOException exception)   
+        {  
+            exception.printStackTrace();  
+        } 
+        
+        return null;
+        
+    }
+    
+    public static Alumno registrarAlumno(String usuario, String contraseña, String nombres, String apellidos, String fechaNacimiento, String codigoGrupo){
+        try
+        {   
+            int nAlumnos=0;
+            BufferedReader readerAlumnos = new BufferedReader(new FileReader("src\\csv\\alumnos.csv")); 
+            while (readerAlumnos.readLine() != null){
+                nAlumnos++;
+            }
+            
+            BufferedWriter writerAlumnos = new BufferedWriter(new FileWriter("src\\csv\\alumnos.csv",true));
+            writerAlumnos.newLine();
+            writerAlumnos.write("A"+String.valueOf(nAlumnos+1)+","+usuario+","+contraseña+","+nombres+","+apellidos+","+fechaNacimiento+","+codigoGrupo+","+"0"+","+"0"+","+"0"+","+"0"+","+"0");
+            writerAlumnos.close();
+            
+            return(new Alumno("A"+String.valueOf(nAlumnos+1),usuario,contraseña,nombres,apellidos,LocalDate.parse(fechaNacimiento,formatter),codigoGrupo));
+        }
+        catch (IOException exception) 
+        {
+            exception.printStackTrace();  
+        }    
         
         return null;
     }
